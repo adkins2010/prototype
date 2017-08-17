@@ -1,0 +1,11 @@
+{
+  "example": [
+    {
+      "status": 200,
+      "message": "OK",
+      "correlationId": "d89ce854be767596",
+      "generatedID": 1,
+      "example": "mockExample"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+apply plugin: 'org.sonarqube'
+
+ext {
+    projectVersion = project.version
+    projectKey = "$project.group:$project.archivesBaseName"
+    hostUrl = 'https://sonarqube.allstate.com'
+    sonarUsername = 'sys-ars-roadIO'
+    sonarPassword = 'Efwv1Ff7'
+    classesDir = "$buildDir/libs/RoadIo-Prototype-0.0.${System.env.BUILD_NUMBER}.jar"
+}
+
+sonarqube {
+    properties {
+        property 'sonar.projectName', 'SERVICE_NAME'
+        property 'sonar.projectDescription', 'SERVICE DESCRIPTION'
+        property 'sonar.projectVersion', projectVersion
+        property 'sonar.projectKey', projectKey
+
+        property 'sonar.host.url', 'https://sonarqube.allstate.com'
+
+        property 'sonar.login', sonarUsername
+        property 'sonar.password', sonarPassword
+        property 'sonar.binaries', classesDir
+        property 'sonar.coverage.exclusions', sonarExclusions
+    }
+}

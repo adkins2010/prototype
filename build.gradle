@@ -1,0 +1,11 @@
+defaultTasks 'prototype-web:clean',
+        'prototype-web:yarn',
+        'prototype-web:yarn_run_build-test',
+        'prototype-web:webjar',
+        'prototype-service:clean',
+        'prototype-service:build',
+        'bootRun'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.4'
+}

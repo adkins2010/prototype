@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Gradle: antlr:antlr:2.7.7">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar" />
+  </library>
+  <library name="Gradle: aopalliance:aopalliance:1.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+  </library>
+  <library name="Gradle: ch.qos.logback:logback-classic:1.1.11">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.11/ccedfbacef4a6515d2983e3f89ed753d5d4fb665/logback-classic-1.1.11.jar" />
+  </library>
+  <library name="Gradle: ch.qos.logback:logback-core:1.1.11">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.11/88b8df40340eed549fb07e2613879bf6b006704d/logback-core-1.1.11.jar" />
+  </library>
+  <library name="Gradle: com.allstate.ars.compozed:roadio-common-logging:0.0.6">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.allstate.ars.compozed/roadio-common-logging/0.0.6/645b8dbf75ec819486af1172e44ef48ceb05e140/roadio-common-logging-0.0.6.jar" />
+  </library>
+  <library name="Gradle: com.amazonaws:aws-java-sdk-autoscaling:1.11.125">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-autoscaling/1.11.125/ed5950d2906ac8bf7c18b0e176d80ba2b431e160/aws-java-sdk-autoscaling-1.11.125.jar" />
+  </library>
+  <library name="Gradle: com.amazonaws:aws-java-sdk-core:1.11.125">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-core/1.11.125/aaf774e3592ae3aec960a1568ef1f28467e0a994/aws-java-sdk-core-1.11.125.jar" />
+  </library>
+  <library name="Gradle: com.amazonaws:aws-java-sdk-ec2:1.11.125">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-ec2/1.11.125/b45d7ae072e9d845bb1e9f09ee185769e1c332ca/aws-java-sdk-ec2-1.11.125.jar" />
+  </library>
+  <library name="Gradle: com.amazonaws:aws-java-sdk-route53:1.11.125">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-route53/1.11.125/b95525b048dce8c57cd2fdeb709caa0314395942/aws-java-sdk-route53-1.11.125.jar" />
+  </library>
+  <library name="Gradle: com.amazonaws:aws-java-sdk-sts:1.11.125">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-sts/1.11.125/8024011e217b04e6d918c4bccaa3e694adeb8de2/aws-java-sdk-sts-1.11.125.jar" />
+  </library>
+  <library name="Gradle: com.amazonaws:jmespath-java:1.11.125">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.amazonaws/jmespath-java/1.11.125/d4b5dfa6c83715642be47e768b0d2299ce04607b/jmespath-java-1.11.125.jar" />
+  </library>
+  <library name="Gradle: com.esotericsoftware:kryo-shaded:3.0.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.esotericsoftware/kryo-shaded/3.0.3/977d6b42d82de551fcf77dad84ef06c2839e3a74/kryo-shaded-3.0.3.jar" />
+  </library>
+  <library name="Gradle: com.esotericsoftware:minlog:1.3.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.esotericsoftware/minlog/1.3.0/ff07b5f1b01d2f92bb00a337f9a94873712f0827/minlog-1.3.0.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml:classmate:1.3.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.3/864c8e370a691e343210cc7c532fc198cee460d8/classmate-1.3.3.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.9/569b1752705da98f49aabe2911cc956ff7d8ed9d/jackson-core-2.8.9.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.9/4dfca3975be3c1a98eacb829e70f02e9a71bc159/jackson-databind-2.8.9.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.8.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.8.9/93242092324cad33d777e06c0515e40a6b862659/jackson-dataformat-cbor-2.8.9.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.8.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-xml/2.8.9/ebf862c6050f7f1592980be1f5977859b28144f8/jackson-dataformat-xml-2.8.9.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.8.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.8.9/e3fc7174eb1f8a4c93dd3c00dd74305c6c24bbc8/jackson-jaxrs-base-2.8.9.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.8.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.8.9/a3df58919521dc4b416f3a0ba20e0829e1db9087/jackson-jaxrs-json-provider-2.8.9.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.module:jackson-module-afterburner:2.8.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-afterburner/2.8.9/a30d941eb1fab3747e6008947d8cb0f8b7692d7b/jackson-module-afterburner-2.8.9.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.8.9/f7e72046e740e06ed58708956d3fc5d32cdb0e7/jackson-module-jaxb-annotations-2.8.9.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.woodstox:woodstox-core:5.0.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.fasterxml.woodstox/woodstox-core/5.0.3/10aa199207fda142eff01cd61c69244877d71770/woodstox-core-5.0.3.jar" />
+  </library>
+  <library name="Gradle: com.google.code.gson:gson:2.8.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.1/2a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0/gson-2.8.1.jar" />
+  </library>
+  <library name="Gradle: com.google.guava:guava:18.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar" />
+  </library>
+  <library name="Gradle: com.google.inject:guice:4.1.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/4.1.0/eeb69005da379a10071aa4948c48d89250febb07/guice-4.1.0.jar" />
+  </library>
+  <library name="Gradle: com.google.protobuf:protobuf-java:2.5.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/2.5.0/a10732c76bfacdbd633a7eb0f7968b1059a65dfa/protobuf-java-2.5.0.jar" />
+  </library>
+  <library name="Gradle: com.jayway.jsonpath:json-path:2.2.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.2.0/22290d17944bd239fabf5ac69005a60a7ecbbbcb/json-path-2.2.0.jar" />
+  </library>
+  <library name="Gradle: com.netflix.archaius:archaius-core:0.7.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.archaius/archaius-core/0.7.4/d6b5e5c541452248fd8565ccd0732623c81a30b5/archaius-core-0.7.4.jar" />
+  </library>
+  <library name="Gradle: com.netflix.eureka:eureka-client:1.6.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.eureka/eureka-client/1.6.2/632cc9b08ccda671780f095ec70a739508c90375/eureka-client-1.6.2.jar" />
+  </library>
+  <library name="Gradle: com.netflix.eureka:eureka-core:1.6.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.eureka/eureka-core/1.6.2/8a8a7dbd1bc4f119f50f11d59b95383b5db6a587/eureka-core-1.6.2.jar" />
+  </library>
+  <library name="Gradle: com.netflix.hystrix:hystrix-core:1.5.12">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-core/1.5.12/75379b6671fcaa9cec33035df684a68ec7741ca6/hystrix-core-1.5.12.jar" />
+  </library>
+  <library name="Gradle: com.netflix.hystrix:hystrix-javanica:1.5.12">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-javanica/1.5.12/5e4d888e0dba811e8ac3a9dbc8cbcc511734ace4/hystrix-javanica-1.5.12.jar" />
+  </library>
+  <library name="Gradle: com.netflix.hystrix:hystrix-metrics-event-stream:1.5.12">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-metrics-event-stream/1.5.12/3b3beae83ab5e8c10154c9e9581d7c210276e227/hystrix-metrics-event-stream-1.5.12.jar" />
+  </library>
+  <library name="Gradle: com.netflix.hystrix:hystrix-serialization:1.5.12">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-serialization/1.5.12/ef4a2758e5bc6cf42ae848d4ba3d5363e0a2b27/hystrix-serialization-1.5.12.jar" />
+  </library>
+  <library name="Gradle: com.netflix.netflix-commons:netflix-commons-util:0.1.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.netflix-commons/netflix-commons-util/0.1.1/39e67061780476f207b31465baaed84a91ff659f/netflix-commons-util-0.1.1.jar" />
+  </library>
+  <library name="Gradle: com.netflix.netflix-commons:netflix-eventbus:0.3.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.netflix-commons/netflix-eventbus/0.3.0/3f864adbe81f0849729fcbba3fe693c32be739ea/netflix-eventbus-0.3.0.jar" />
+  </library>
+  <library name="Gradle: com.netflix.netflix-commons:netflix-infix:0.3.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.netflix-commons/netflix-infix/0.3.0/acc65969f7367ddd2f1265e0cd7330509ed530dc/netflix-infix-0.3.0.jar" />
+  </library>
+  <library name="Gradle: com.netflix.netflix-commons:netflix-statistics:0.1.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.netflix-commons/netflix-statistics/0.1.1/12f6e48253f9cafa0e24d7d232ff504c52143212/netflix-statistics-0.1.1.jar" />
+  </library>
+  <library name="Gradle: com.netflix.ribbon:ribbon:2.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.ribbon/ribbon/2.2.2/8375769b9a922dc5339eba8536fcd3b204604ec4/ribbon-2.2.2.jar" />
+  </library>
+  <library name="Gradle: com.netflix.ribbon:ribbon-core:2.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.ribbon/ribbon-core/2.2.2/e4e35763c347c6a3936735d687f1bd25c188634/ribbon-core-2.2.2.jar" />
+  </library>
+  <library name="Gradle: com.netflix.ribbon:ribbon-eureka:2.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.ribbon/ribbon-eureka/2.2.2/3698abea929c7e869587b1c3557148a2958f24c3/ribbon-eureka-2.2.2.jar" />
+  </library>
+  <library name="Gradle: com.netflix.ribbon:ribbon-httpclient:2.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.ribbon/ribbon-httpclient/2.2.2/88c3f39aa09591964923d60f92c13d3a91125d81/ribbon-httpclient-2.2.2.jar" />
+  </library>
+  <library name="Gradle: com.netflix.ribbon:ribbon-loadbalancer:2.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.ribbon/ribbon-loadbalancer/2.2.2/dad3e307fb759c3be36d93a1a7a2a031569d8de8/ribbon-loadbalancer-2.2.2.jar" />
+  </library>
+  <library name="Gradle: com.netflix.ribbon:ribbon-transport:2.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.ribbon/ribbon-transport/2.2.2/de836ea86da897f3ecf5ac9d2cc790ea2293f017/ribbon-transport-2.2.2.jar" />
+  </library>
+  <library name="Gradle: com.netflix.servo:servo-core:0.10.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.servo/servo-core/0.10.1/7461ed61647f9996c88ad822546ffc7851a45e0e/servo-core-0.10.1.jar" />
+  </library>
+  <library name="Gradle: com.netflix.servo:servo-internal:0.10.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.servo/servo-internal/0.10.1/bb6f9cd7b309189bad01b93a806ba9d6cb5d915a/servo-internal-0.10.1.jar" />
+  </library>
+  <library name="Gradle: com.netflix.zuul:zuul-core:1.3.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.netflix.zuul/zuul-core/1.3.0/3974695eb1c9845a2fc575acfdea2d8d91deba1b/zuul-core-1.3.0.jar" />
+  </library>
+  <library name="Gradle: com.oracle:ojdbc6:11.2.0.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.oracle/ojdbc6/11.2.0.3/895e6dd810ba6c4ae83be2c5bce744bfed43ef7b/ojdbc6-11.2.0.3.jar" />
+  </library>
+  <library name="Gradle: com.rabbitmq:amqp-client:3.6.5">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.rabbitmq/amqp-client/3.6.5/59e11141636ba2469a6fdd8c986d622480c3e239/amqp-client-3.6.5.jar" />
+  </library>
+  <library name="Gradle: com.rabbitmq:http-client:1.1.1.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.rabbitmq/http-client/1.1.1.RELEASE/a3c71766981a70137aa4570e3830c542a7631d3e/http-client-1.1.1.RELEASE.jar" />
+  </library>
+  <library name="Gradle: com.sun.jersey.contribs:jersey-apache-client4:1.19.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.sun.jersey.contribs/jersey-apache-client4/1.19.1/e1c45701a003097ace96bed4bc8fb937e9867498/jersey-apache-client4-1.19.1.jar" />
+  </library>
+  <library name="Gradle: com.sun.jersey:jersey-client:1.19.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-client/1.19.1/2df97ebd4e5c01599584c45caa3aeb563d268eef/jersey-client-1.19.1.jar" />
+  </library>
+  <library name="Gradle: com.sun.jersey:jersey-core:1.19.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-core/1.19.1/4282d106f2acd5051bd9bc2935ed9a2920c9385/jersey-core-1.19.1.jar" />
+  </library>
+  <library name="Gradle: com.sun.jersey:jersey-server:1.19.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-server/1.19.1/1906bc869c8a4144d8e035c45a934929eb70ebb0/jersey-server-1.19.1.jar" />
+  </library>
+  <library name="Gradle: com.sun.jersey:jersey-servlet:1.19.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-servlet/1.19.1/d4e259cf85242c9905b6e5894f2cac803232f565/jersey-servlet-1.19.1.jar" />
+  </library>
+  <library name="Gradle: com.thoughtworks.xstream:xstream:1.4.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.thoughtworks.xstream/xstream/1.4.9/c43f6e6bfa79b56e04a8898a923c3cf7144dd460/xstream-1.4.9.jar" />
+  </library>
+  <library name="Gradle: com.vaadin.external.google:android-json:0.0.20131108.vaadin1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar" />
+  </library>
+  <library name="Gradle: com.zaxxer:HikariCP:2.5.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/2.5.1/b896b711e2d98fedf403de590559a123b5fbf1a6/HikariCP-2.5.1.jar" />
+  </library>
+  <library name="Gradle: commons-codec:commons-codec:1.10">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar" />
+  </library>
+  <library name="Gradle: commons-collections:commons-collections:3.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar" />
+  </library>
+  <library name="Gradle: commons-configuration:commons-configuration:1.8">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/commons-configuration/commons-configuration/1.8/6cce40435bcd8018018f16898de01976b319941a/commons-configuration-1.8.jar" />
+  </library>
+  <library name="Gradle: commons-io:commons-io:2.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" />
+  </library>
+  <library name="Gradle: commons-jxpath:commons-jxpath:1.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/commons-jxpath/commons-jxpath/1.3/c22d7d0f0f40eb7059a23cfa61773a416768b137/commons-jxpath-1.3.jar" />
+  </library>
+  <library name="Gradle: commons-lang:commons-lang:2.6">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar" />
+  </library>
+  <library name="Gradle: commons-logging:commons-logging:1.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
+  </library>
+  <library name="Gradle: dom4j:dom4j:1.6.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar" />
+  </library>
+  <library name="Gradle: info.cukes:cucumber-core:1.2.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-core/1.2.4/72790b1da44d8d3d2764c6aef29865ee228bbeb1/cucumber-core-1.2.4.jar" />
+  </library>
+  <library name="Gradle: info.cukes:cucumber-html:0.2.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-html/0.2.3/624a0c986088e32910336dd77aee5191c04a8201/cucumber-html-0.2.3.jar" />
+  </library>
+  <library name="Gradle: info.cukes:cucumber-java:1.2.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-java/1.2.4/57cca534b7abe43f6dd7624b90d3d97d33d3023d/cucumber-java-1.2.4.jar" />
+  </library>
+  <library name="Gradle: info.cukes:cucumber-junit:1.2.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-junit/1.2.4/8a57b68486cff4da4f10019cb9c62c597a6d2861/cucumber-junit-1.2.4.jar" />
+  </library>
+  <library name="Gradle: info.cukes:cucumber-jvm-deps:1.0.5">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-jvm-deps/1.0.5/69ed0efe4b81f05da3c0bdc7281cbdc43f5ceb26/cucumber-jvm-deps-1.0.5.jar" />
+  </library>
+  <library name="Gradle: info.cukes:cucumber-spring:1.2.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-spring/1.2.4/f3cff393c13087ac43e11936a90ec0c8792c534/cucumber-spring-1.2.4.jar" />
+  </library>
+  <library name="Gradle: info.cukes:gherkin:2.12.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/info.cukes/gherkin/2.12.2/17138631fa20fd0e44a13e50d6b7be59cee1a94/gherkin-2.12.2.jar" />
+  </library>
+  <library name="Gradle: io.github.openfeign:feign-core:9.5.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.github.openfeign/feign-core/9.5.0/7b89da81b21d8cdd4f5b4c79b730dbc11427bb14/feign-core-9.5.0.jar" />
+  </library>
+  <library name="Gradle: io.github.openfeign:feign-hystrix:9.5.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.github.openfeign/feign-hystrix/9.5.0/1a715fb47635793c5302fcdd3f880ed6ec2816fd/feign-hystrix-9.5.0.jar" />
+  </library>
+  <library name="Gradle: io.github.openfeign:feign-slf4j:9.5.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.github.openfeign/feign-slf4j/9.5.0/bd87fd711ac41e952c63e25a1d68df5b4cc1e0a3/feign-slf4j-9.5.0.jar" />
+  </library>
+  <library name="Gradle: io.netty:netty-buffer:4.0.27.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.0.27.Final/91d5d38fd5cfa7b507e4f82297ba2bf7f30be805/netty-buffer-4.0.27.Final.jar" />
+  </library>
+  <library name="Gradle: io.netty:netty-codec:4.0.27.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.0.27.Final/8ed3790b480d4370d22ad1b74a79a54663619b3/netty-codec-4.0.27.Final.jar" />
+  </library>
+  <library name="Gradle: io.netty:netty-codec-http:4.0.27.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.0.27.Final/59b04b31b58942615c0035c61db1167d118ee218/netty-codec-http-4.0.27.Final.jar" />
+  </library>
+  <library name="Gradle: io.netty:netty-common:4.0.27.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.0.27.Final/f9adee4559928c2e75d58b33e109c17342cb0991/netty-common-4.0.27.Final.jar" />
+  </library>
+  <library name="Gradle: io.netty:netty-handler:4.0.27.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.0.27.Final/91d5c8e25150759bdfce680f318e7b3e8a493b1f/netty-handler-4.0.27.Final.jar" />
+  </library>
+  <library name="Gradle: io.netty:netty-transport:4.0.27.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.0.27.Final/fc1e00d9d2815f74df6af1cf79da65d6b2d6b102/netty-transport-4.0.27.Final.jar" />
+  </library>
+  <library name="Gradle: io.netty:netty-transport-native-epoll:4.0.27.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.0.27.Final/3da4eda5697a09c9f8e217bc6a0f265b5b5102c5/netty-transport-native-epoll-4.0.27.Final.jar" />
+  </library>
+  <library name="Gradle: io.pivotal.spring.cloud:cloudfoundry-certificate-truster:1.0.1.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.pivotal.spring.cloud/cloudfoundry-certificate-truster/1.0.1.RELEASE/a2f11ea882e288e2afd19c0c4f230905d4844cb8/cloudfoundry-certificate-truster-1.0.1.RELEASE.jar" />
+  </library>
+  <library name="Gradle: io.pivotal.spring.cloud:spring-cloud-services-cloudfoundry-connector:1.5.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.pivotal.spring.cloud/spring-cloud-services-cloudfoundry-connector/1.5.0.RELEASE/99a7105770cdb8a00e10a63940f141975ca81f10/spring-cloud-services-cloudfoundry-connector-1.5.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: io.pivotal.spring.cloud:spring-cloud-services-connector-core:1.5.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.pivotal.spring.cloud/spring-cloud-services-connector-core/1.5.0.RELEASE/9e5268a551cd67b26f7911b7c32cebf7091ddb8f/spring-cloud-services-connector-core-1.5.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: io.pivotal.spring.cloud:spring-cloud-services-spring-connector:1.5.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.pivotal.spring.cloud/spring-cloud-services-spring-connector/1.5.0.RELEASE/18b30cf73b9071ed09736bff743cb617f7ecb5f7/spring-cloud-services-spring-connector-1.5.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker:1.5.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.pivotal.spring.cloud/spring-cloud-services-starter-circuit-breaker/1.5.0.RELEASE/c660656839737f0346ad973f39b1ce30a5ab4600/spring-cloud-services-starter-circuit-breaker-1.5.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: io.pivotal.spring.cloud:spring-cloud-services-starter-config-client:1.5.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.pivotal.spring.cloud/spring-cloud-services-starter-config-client/1.5.0.RELEASE/8348b5d3c83c3280d4155c5212baff1688542877/spring-cloud-services-starter-config-client-1.5.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry:1.5.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.pivotal.spring.cloud/spring-cloud-services-starter-service-registry/1.5.0.RELEASE/be97e67111867663e36318a7e4a4b520f39ac70f/spring-cloud-services-starter-service-registry-1.5.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: io.reactivex:rxjava:1.1.10">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.10/2ac360e8a47601a8dfd044e646f05b99d151f2e0/rxjava-1.1.10.jar" />
+  </library>
+  <library name="Gradle: io.reactivex:rxnetty:0.4.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.reactivex/rxnetty/0.4.9/5aff3c9d6bb9d9066c378bb3d2a4413ed1773bcf/rxnetty-0.4.9.jar" />
+  </library>
+  <library name="Gradle: io.reactivex:rxnetty-contexts:0.4.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.reactivex/rxnetty-contexts/0.4.9/6efe17a25602a5424c18ab975aa9c28b6d6b7f56/rxnetty-contexts-0.4.9.jar" />
+  </library>
+  <library name="Gradle: io.reactivex:rxnetty-servo:0.4.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.reactivex/rxnetty-servo/0.4.9/b7d6d6e132686c280f16710eaa3e90719f6808f8/rxnetty-servo-0.4.9.jar" />
+  </library>
+  <library name="Gradle: io.springfox:springfox-core:2.6.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-core/2.6.1/5c502e6b9d50d34096077eacc384cd00f63710e1/springfox-core-2.6.1.jar" />
+  </library>
+  <library name="Gradle: io.springfox:springfox-schema:2.6.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-schema/2.6.1/b4d837ed7dc726a59504d2e6587e162e071a8965/springfox-schema-2.6.1.jar" />
+  </library>
+  <library name="Gradle: io.springfox:springfox-spi:2.6.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spi/2.6.1/972ae720c6a9a5f31be2744972b435cc39166174/springfox-spi-2.6.1.jar" />
+  </library>
+  <library name="Gradle: io.springfox:springfox-spring-web:2.6.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-spring-web/2.6.1/6478ed7e49755b652aac907d42a735349056a6a/springfox-spring-web-2.6.1.jar" />
+  </library>
+  <library name="Gradle: io.springfox:springfox-swagger2:2.6.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger2/2.6.1/73c3a70ec0b10b61c8eb9ef1659131cd78dbbd82/springfox-swagger2-2.6.1.jar" />
+  </library>
+  <library name="Gradle: io.springfox:springfox-swagger-common:2.6.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-common/2.6.1/47befb039a0a1f0cdaab74d2777fa9eb6b01f8db/springfox-swagger-common-2.6.1.jar" />
+  </library>
+  <library name="Gradle: io.springfox:springfox-swagger-ui:2.6.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.springfox/springfox-swagger-ui/2.6.1/4c854c86c91ab36c86fc1a63571a0614c2ea9ab2/springfox-swagger-ui-2.6.1.jar" />
+  </library>
+  <library name="Gradle: io.swagger:swagger-annotations:1.5.10">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.swagger/swagger-annotations/1.5.10/246ec68bce560227d3633d5ab5979437544bd6dc/swagger-annotations-1.5.10.jar" />
+  </library>
+  <library name="Gradle: io.swagger:swagger-models:1.5.10">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.swagger/swagger-models/1.5.10/da29e4f4f7cff80b1ef134b0f3805013be443e58/swagger-models-1.5.10.jar" />
+  </library>
+  <library name="Gradle: io.zipkin.java:zipkin:1.28.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.zipkin.java/zipkin/1.28.0/c9ed908bb8504df9d411eee88869b42e94b8d29f/zipkin-1.28.0.jar" />
+  </library>
+  <library name="Gradle: io.zipkin.java:zipkin-autoconfigure-storage-mysql:1.28.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.zipkin.java/zipkin-autoconfigure-storage-mysql/1.28.0/52296f5cb3db7280953a9110d19ee3cb01f7d5c8/zipkin-autoconfigure-storage-mysql-1.28.0.jar" />
+  </library>
+  <library name="Gradle: io.zipkin.java:zipkin-autoconfigure-ui:1.28.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.zipkin.java/zipkin-autoconfigure-ui/1.28.0/6ee34956d1d1cb8304039fd5c2a5b6a2709c19b9/zipkin-autoconfigure-ui-1.28.0.jar" />
+  </library>
+  <library name="Gradle: io.zipkin.java:zipkin-server:1.28.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.zipkin.java/zipkin-server/1.28.0/7050b5212e4dcd7d257443d7a41e59eb41693bc/zipkin-server-1.28.0.jar" />
+  </library>
+  <library name="Gradle: io.zipkin.java:zipkin-storage-mysql:1.28.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.zipkin.java/zipkin-storage-mysql/1.28.0/37e1c0b698c9414b09d193b10727d003abdbd4a3/zipkin-storage-mysql-1.28.0.jar" />
+  </library>
+  <library name="Gradle: io.zipkin.java:zipkin-ui:1.28.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.zipkin.java/zipkin-ui/1.28.0/62bd04cb2a06e1c219c421b6575de868718a5ac2/zipkin-ui-1.28.0.jar" />
+  </library>
+  <library name="Gradle: io.zipkin.reporter:zipkin-reporter:1.0.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/io.zipkin.reporter/zipkin-reporter/1.0.0/5780252223667a911e8297b7f3e0f4156dbd3e32/zipkin-reporter-1.0.0.jar" />
+  </library>
+  <library name="Gradle: javax.annotation:javax.annotation-api:1.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar" />
+  </library>
+  <library name="Gradle: javax.annotation:jsr250-api:1.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar" />
+  </library>
+  <library name="Gradle: javax.enterprise:cdi-api:1.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/javax.enterprise/cdi-api/1.0/44c453f60909dfc223552ace63e05c694215156b/cdi-api-1.0.jar" />
+  </library>
+  <library name="Gradle: javax.inject:javax.inject:1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
+  </library>
+  <library name="Gradle: javax.transaction:javax.transaction-api:1.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.2/d81aff979d603edd90dcd8db2abc1f4ce6479e3e/javax.transaction-api-1.2.jar" />
+  </library>
+  <library name="Gradle: javax.validation:validation-api:1.1.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar" />
+  </library>
+  <library name="Gradle: javax.ws.rs:javax.ws.rs-api:2.0.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.0.1/104e9c2b5583cfcfeac0402316221648d6d8ea6b/javax.ws.rs-api-2.0.1.jar" />
+  </library>
+  <library name="Gradle: javax.ws.rs:jsr311-api:1.1.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/javax.ws.rs/jsr311-api/1.1.1/59033da2a1afd56af1ac576750a8d0b1830d59e6/jsr311-api-1.1.1.jar" />
+  </library>
+  <library name="Gradle: javax.xml.stream:stax-api:1.0-2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/javax.xml.stream/stax-api/1.0-2/d6337b0de8b25e53e81b922352fbea9f9f57ba0b/stax-api-1.0-2.jar" />
+  </library>
+  <library name="Gradle: joda-time:joda-time:2.9.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.9/f7b520c458572890807d143670c9b24f4de90897/joda-time-2.9.9.jar" />
+  </library>
+  <library name="Gradle: junit:junit:4.12">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar" />
+  </library>
+  <library name="Gradle: mysql:mysql-connector-java:5.1.43">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.43/dee9103eec0d877f3a21c82d4d9e9f4fbd2d6e0a/mysql-connector-java-5.1.43.jar" />
+  </library>
+  <library name="Gradle: net.minidev:accessors-smart:1.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/1.1/a527213f2fea112a04c9bdf0ec0264e34104cd08/accessors-smart-1.1.jar" />
+  </library>
+  <library name="Gradle: net.minidev:json-smart:2.2.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.2.1/5b9e5df7a62d1279b70dc882b041d249c4f0b002/json-smart-2.2.1.jar" />
+  </library>
+  <library name="Gradle: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/nz.net.ultraq.thymeleaf/thymeleaf-layout-dialect/1.4.0/8d7810c069ed1534b9631fb1e85c35973546086/thymeleaf-layout-dialect-1.4.0.jar" />
+  </library>
+  <library name="Gradle: ognl:ognl:3.0.8">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/ognl/ognl/3.0.8/37e1aebfde7eb7baebc9ad4f85116ef9009c5fc5/ognl-3.0.8.jar" />
+  </library>
+  <library name="Gradle: org.antlr:antlr-runtime:3.5">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.5/baa82bff19059401e90e1b90020beb9c96305d7/antlr-runtime-3.5.jar" />
+  </library>
+  <library name="Gradle: org.apache.ant:ant:1.8.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant/1.8.2/fc33bf7cd8c5309dd7b81228e8626515ee42efd9/ant-1.8.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.ant:ant-launcher:1.8.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.8.2/6a5466384e7e2086b13d3d281dadaa059b0d0923/ant-launcher-1.8.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.commons:commons-lang3:3.3.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.commons:commons-math:2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math/2.2/4877b85d388275f994a5cfc7eceb73a8045d3006/commons-math-2.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.httpcomponents:httpclient:4.5.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.3/d1577ae15f01ef5438c5afc62162457c00a34713/httpclient-4.5.3.jar" />
+  </library>
+  <library name="Gradle: org.apache.httpcomponents:httpcore:4.4.6">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.6/e3fd8ced1f52c7574af952e2e6da0df8df08eb82/httpcore-4.4.6.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-aether-provider:3.2.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-aether-provider/3.2.1/ab57cafec4e9c2650df963d83cb173d311fcadf0/maven-aether-provider-3.2.1.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-artifact:3.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.2.2/2e27744326e024584deb4041c55174c85c3d44be/maven-artifact-3.2.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-compat:3.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-compat/3.2.2/10e0ba9f0c0ae212504be73950ba8eee50f88383/maven-compat-3.2.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-core:3.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-core/3.2.2/201c59902d130209c9297c5f51f080d4072b0ee4/maven-core-3.2.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-model:3.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.2.2/e9f519a2598b3c0bebd2b3e4d0ecabe404848910/maven-model-3.2.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-model-builder:3.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model-builder/3.2.2/d8b2475ef790703528130e2684c0b4ebc6918a91/maven-model-builder-3.2.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-plugin-api:3.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-plugin-api/3.2.2/509bd0538718a37055ccf1a908b0285e9b8a82f3/maven-plugin-api-3.2.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-repository-metadata:3.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-repository-metadata/3.2.2/ed8ee7564cfb5433583cde7ddc14a4907ed823f1/maven-repository-metadata-3.2.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-settings:3.2.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-settings/3.2.2/f5bd7f2df02fe5e489e4560def6f7f40df15e483/maven-settings-3.2.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven:maven-settings-builder:3.2.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-settings-builder/3.2.1/b48c4f7cdf46b52fae16a819bde1fc4d2ee37d0b/maven-settings-builder-3.2.1.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven.wagon:wagon-http:2.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven.wagon/wagon-http/2.0/2daad6e1346c8a2b5ecba66bc323978b5e47dbbc/wagon-http-2.0.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven.wagon:wagon-http-shared4:2.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven.wagon/wagon-http-shared4/2.0/9ac06d84e59bb4426ea5f60e1f981c53903bb407/wagon-http-shared4-2.0.jar" />
+  </library>
+  <library name="Gradle: org.apache.maven.wagon:wagon-provider-api:2.6">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.maven.wagon/wagon-provider-api/2.6/62da5193bb8ccca0c0bcba0868d702e22f26b33a/wagon-provider-api-2.6.jar" />
+  </library>
+  <library name="Gradle: org.apache.poi:poi:3.10.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi/3.10.1/95174823e13aa828cb715b542e647e56096ffcb2/poi-3.10.1.jar" />
+  </library>
+  <library name="Gradle: org.apache.poi:poi-ooxml:3.10.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/3.10.1/c62b1db67f2a7cafd4dd55c41256a2fa0793191/poi-ooxml-3.10.1.jar" />
+  </library>
+  <library name="Gradle: org.apache.poi:poi-ooxml-schemas:3.10.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml-schemas/3.10.1/7a61214b7dc2f1d25d9c265ca7f7fd12cee72fd7/poi-ooxml-schemas-3.10.1.jar" />
+  </library>
+  <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:8.5.16">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.16/1318c2a44de53b692cb42021dc3d9a2a185e65a4/tomcat-embed-core-8.5.16.jar" />
+  </library>
+  <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:8.5.16">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.16/d8d33b26d42c3857c6d2a566dd842d2308582020/tomcat-embed-el-8.5.16.jar" />
+  </library>
+  <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:8.5.16">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.5.16/8df572a6fa38c24a6366ab254b9bde496ed5ea95/tomcat-embed-websocket-8.5.16.jar" />
+  </library>
+  <library name="Gradle: org.apache.tomcat:tomcat-jdbc:8.5.16">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.16/c4b7a82f4f4276f0c76e9db11fb2653e6582bfb3/tomcat-jdbc-8.5.16.jar" />
+  </library>
+  <library name="Gradle: org.apache.tomcat:tomcat-juli:8.5.16">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.5.16/e9e65481ee92eaf7dace280320f28139d485c958/tomcat-juli-8.5.16.jar" />
+  </library>
+  <library name="Gradle: org.apache.velocity:velocity:1.7">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.velocity/velocity/1.7/2ceb567b8f3f21118ecdec129fe1271dbc09aa7a/velocity-1.7.jar" />
+  </library>
+  <library name="Gradle: org.apache.xmlbeans:xmlbeans:2.6.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.apache.xmlbeans/xmlbeans/2.6.0/29e80d2dd51f9dcdef8f9ffaee0d4dc1c9bbfc87/xmlbeans-2.6.0.jar" />
+  </library>
+  <library name="Gradle: org.aspectj:aspectjrt:1.8.10">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.10/1a14fe9e912f6e8bdbb5429b78b4090d8b47bc1/aspectjrt-1.8.10.jar" />
+  </library>
+  <library name="Gradle: org.aspectj:aspectjweaver:1.8.10">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.10/e198c5fee28988c355f74e06461614eae36b2032/aspectjweaver-1.8.10.jar" />
+  </library>
+  <library name="Gradle: org.assertj:assertj-core:2.6.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/2.6.0/b532c3fc4f66bcfee4989a3514f1cd56203a33ad/assertj-core-2.6.0.jar" />
+  </library>
+  <library name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.55">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.55/6392d8cba22b722c6570d660ca0b3921ff1bae4f/bcpkix-jdk15on-1.55.jar" />
+  </library>
+  <library name="Gradle: org.bouncycastle:bcprov-jdk15on:1.55">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.55/935f2e57a00ec2c489cbd2ad830d4a399708f979/bcprov-jdk15on-1.55.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.groovy:groovy:2.4.12">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy/2.4.12/a43be367110c491787219f1c128b5b5fc54f1e70/groovy-2.4.12.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.groovy:groovy-templates:2.4.12">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-templates/2.4.12/dc1e3e1546dd19457aa4f2bdba57d35089721ed8/groovy-templates-2.4.12.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.groovy:groovy-xml:2.4.12">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-xml/2.4.12/b5c023bbbc8a4bbf9c0b38d731fe31d53f00c64a/groovy-xml-2.4.12.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.13">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.13/3c304d70f42f832e0a86d45bd437f692129299a4/jackson-core-asl-1.9.13.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.13">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.13/1ee2f2bed0e5dd29d1cb155a166e6f8d50bbddb7/jackson-mapper-asl-1.9.13.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.jettison:jettison:1.3.7">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.jettison/jettison/1.3.7/7d36a59a0577f11b12088b9e215d6860345b9e1d/jettison-1.3.7.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.plexus:plexus-classworlds:2.5.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-classworlds/2.5.1/98fea8e8c3fb0e8670a69ad6ea445872c9972910/plexus-classworlds-2.5.1.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.plexus:plexus-component-annotations:1.5.5">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-component-annotations/1.5.5/c72f2660d0cbed24246ddb55d7fdc4f7374d2078/plexus-component-annotations-1.5.5.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.plexus:plexus-interpolation:1.19">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-interpolation/1.19/b260ca7a23bb0d209771db7aae35049899433fe3/plexus-interpolation-1.19.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.plexus:plexus-utils:3.0.17">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.0.17/7b86f7a4ceffc8eadbb1a84207134af776f7cb95/plexus-utils-3.0.17.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.woodstox:stax2-api:3.1.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/stax2-api/3.1.4/ac19014b1e6a7c08aad07fe114af792676b685b7/stax2-api-3.1.4.jar" />
+  </library>
+  <library name="Gradle: org.codehaus.woodstox:woodstox-core-asl:4.4.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.codehaus.woodstox/woodstox-core-asl/4.4.1/84fee5eb1a4a1cefe65b6883c73b3fa83be3c1a1/woodstox-core-asl-4.4.1.jar" />
+  </library>
+  <library name="Gradle: org.drools:drools-compiler:6.3.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.drools/drools-compiler/6.3.0.Final/79a9cf2836dab75d5e37041d17940c528b39bdc8/drools-compiler-6.3.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.drools:drools-core:6.3.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.drools/drools-core/6.3.0.Final/8e2207a1334c9bd454f1840b32ae41df558bdd24/drools-core-6.3.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.drools:drools-decisiontables:6.3.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.drools/drools-decisiontables/6.3.0.Final/bd393cccdb8e7f14229d0693f13dab1bf004146a/drools-decisiontables-6.3.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.drools:drools-templates:6.3.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.drools/drools-templates/6.3.0.Final/815730ecb738c1901c5969379af9d87f7531e136/drools-templates-6.3.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.aether:aether-api:1.0.2.v20150114">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-api/1.0.2.v20150114/839f93a5213fb3e233b09bfd6d6b95669f7043c0/aether-api-1.0.2.v20150114.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.aether:aether-connector-basic:1.0.2.v20150114">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-connector-basic/1.0.2.v20150114/d55c03b16efc16f25e1fd9fe0f37878fddbeed68/aether-connector-basic-1.0.2.v20150114.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.aether:aether-impl:1.0.2.v20150114">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-impl/1.0.2.v20150114/f147539e6e60dfbda9ef7f6d750066170f61b7a1/aether-impl-1.0.2.v20150114.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.aether:aether-spi:1.0.2.v20150114">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-spi/1.0.2.v20150114/8428dfa330107984f3e3ac05cc3ebd50b2676866/aether-spi-1.0.2.v20150114.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.aether:aether-transport-file:1.0.2.v20150114">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-transport-file/1.0.2.v20150114/79ffcce2aa9c525ad5a1d0fc3f9669133c3f9572/aether-transport-file-1.0.2.v20150114.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.aether:aether-transport-http:1.0.2.v20150114">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-transport-http/1.0.2.v20150114/262b7fb2e9872f470c059bc4053a3f2f7449932d/aether-transport-http-1.0.2.v20150114.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.aether:aether-transport-wagon:1.0.0.v20140518">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-transport-wagon/1.0.0.v20140518/19be874c32183409ed76fcd3ecc05b28f3e06e62/aether-transport-wagon-1.0.0.v20140518.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.aether:aether-util:1.0.2.v20150114">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-util/1.0.2.v20150114/d2d3c74a5210544b5cdce89a2c1d1c62835692d1/aether-util-1.0.2.v20150114.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.jdt.core.compiler:ecj:4.3.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.3.1/21582b0e662b9e54fc6f0f2721d36f753ce7c58c/ecj-4.3.1.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.sisu:org.eclipse.sisu.inject:0.0.0.M5">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.inject/0.0.0.M5/4f6bda3f528c60a12e70db2e7a3feee539dcc8cd/org.eclipse.sisu.inject-0.0.0.M5.jar" />
+  </library>
+  <library name="Gradle: org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M5">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.plexus/0.0.0.M5/8818cc5a4d2afde2fbc87c2a78cf1ebf5719a869/org.eclipse.sisu.plexus-0.0.0.M5.jar" />
+  </library>
+  <library name="Gradle: org.freemarker:freemarker:2.3.26-incubating">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.freemarker/freemarker/2.3.26-incubating/713237e013f725b72f4f9ec931a49c14b1805359/freemarker-2.3.26-incubating.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:class-model:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/class-model/2.5.0-b32/17f054f3e91898c0c0fc52163ad904b13c24e8b/class-model-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:config-types:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/config-types/2.5.0-b32/686bbe7f80b1b879d64c06bc6606c97721a795f2/config-types-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2.external:aopalliance-repackaged:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.5.0-b32/6af37c3f8ec6f9e9653ec837eb508da28ce443cd/aopalliance-repackaged-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2.external:asm-all-repackaged:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/asm-all-repackaged/2.5.0-b32/dc705f1d54cd5a96cbc5a473525e75ef1cb59a9e/asm-all-repackaged-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2.external:javax.inject:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/javax.inject/2.5.0-b32/b2fa50c8186a38728c35fe6a9da57ce4cc806923/javax.inject-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:hk2:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.5.0-b32/c3accae585955e49c771d464899e906ecc9ffb4/hk2-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:hk2-api:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.5.0-b32/6a576c9653832ce610b80a2f389374ef19d96171/hk2-api-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:hk2-config:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-config/2.5.0-b32/dce05ac4225dbc0c1c382ad02e3b5bee51f0168a/hk2-config-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:hk2-core:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-core/2.5.0-b32/8cb6a8a9522ec523b7740d29f555bdbe9d936af2/hk2-core-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:hk2-locator:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.5.0-b32/195474f8ad0a8d130e9ea949a771bcf1215fc33b/hk2-locator-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:hk2-runlevel:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-runlevel/2.5.0-b32/60dc979763ea885e796cba4d3e322af8d500ba74/hk2-runlevel-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:hk2-utils:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.5.0-b32/5108a926988c4ceda7f1e681dddfe3101454a002/hk2-utils-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:osgi-resource-locator:1.0.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.1/4ed2b2d4738aed5786cfa64cba5a332779c4c708/osgi-resource-locator-1.0.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.hk2:spring-bridge:2.5.0-b32">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/spring-bridge/2.5.0-b32/f38ecef23edc769942a95c062efd63541044de42/spring-bridge-2.5.0-b32.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.bundles.repackaged/jersey-guava/2.25.1/a2bb4f8208e134cf2cf71dfb8824e42942f7bd06/jersey-guava-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.25.1/cf5f7a76fcea38158b890ab7a0142d4db709a882/jersey-container-servlet-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet-core:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.25.1/400e30bb035a0cdf3c554530224141ce659a0d1e/jersey-container-servlet-core-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.core:jersey-client:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.25.1/4d563b1f93352ee9fad597e9e1daf2c6159993c6/jersey-client-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.core:jersey-common:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.25.1/2438ce68d4907046095ab54aa83a6092951b4bbb/jersey-common-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.core:jersey-server:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.25.1/276e2ee0fd1cdabf99357fce560c5baab675b1a2/jersey-server-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.ext:jersey-bean-validation:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-bean-validation/2.25.1/1971927d79cad0ad2b5a3bfda24967748a2023d/jersey-bean-validation-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.ext:jersey-entity-filtering:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.25.1/4a5805060f796ec2c9bb1ba0ce91c1db6d889524/jersey-entity-filtering-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.ext:jersey-spring3:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-spring3/2.25.1/a31bfcd2fcae5beb979d3f41079b6f4020d6fbc9/jersey-spring3-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.media:jersey-media-jaxb:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.25.1/d7da0beeed5614a3bfd882662faec602699e24b/jersey-media-jaxb-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.glassfish.jersey.media:jersey-media-json-jackson:2.25.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.25.1/19d1e4276eb7b6386640c344d9e5c01eba7eae5d/jersey-media-json-jackson-2.25.1.jar" />
+  </library>
+  <library name="Gradle: org.hamcrest:hamcrest-core:1.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" />
+  </library>
+  <library name="Gradle: org.hamcrest:hamcrest-library:1.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar" />
+  </library>
+  <library name="Gradle: org.hdrhistogram:HdrHistogram:2.1.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.9/e4631ce165eb400edecfa32e03d3f1be53dee754/HdrHistogram-2.1.9.jar" />
+  </library>
+  <library name="Gradle: org.hibernate.common:hibernate-commons-annotations:5.0.1.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar" />
+  </library>
+  <library name="Gradle: org.hibernate:hibernate-core:5.0.12.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.0.12.Final/e58bf1c660e6706d8e2cbb53bae110f574366102/hibernate-core-5.0.12.Final.jar" />
+  </library>
+  <library name="Gradle: org.hibernate:hibernate-entitymanager:5.0.12.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/5.0.12.Final/302a526f5058290e9cbd719a5caf9f248d344719/hibernate-entitymanager-5.0.12.Final.jar" />
+  </library>
+  <library name="Gradle: org.hibernate:hibernate-validator:5.3.5.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.3.5.Final/622a9bcef2eed6d41b5b8e0662c36212009e375/hibernate-validator-5.3.5.Final.jar" />
+  </library>
+  <library name="Gradle: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.javassist:javassist:3.21.0-GA">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.21.0-GA/598244f595db5c5fb713731eddbb1c91a58d959b/javassist-3.21.0-GA.jar" />
+  </library>
+  <library name="Gradle: org.jboss:jandex:2.0.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.0.Final/3e899258936f94649c777193e1be846387ed54b3/jandex-2.0.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.jboss.logging:jboss-logging:3.3.1.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.1.Final/c46217ab74b532568c0ed31dc599db3048bd1b67/jboss-logging-3.3.1.Final.jar" />
+  </library>
+  <library name="Gradle: org.jbpm:jbpm-flow:6.3.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.jbpm/jbpm-flow/6.3.0.Final/f8e0b75e52c11afad24adc8a95b1d6e5040aafb9/jbpm-flow-6.3.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.jsoup:jsoup:1.6.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.6.1/70f0dfbe511d84ee7d0dda238a52746751787c47/jsoup-1.6.1.jar" />
+  </library>
+  <library name="Gradle: org.jvnet:animal-sniffer-annotation:1.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.jvnet/animal-sniffer-annotation/1.0/67da8e0d8a8ef79c461a489f9f7bb3e86e23ccae/animal-sniffer-annotation-1.0.jar" />
+  </library>
+  <library name="Gradle: org.kie:kie-api:6.3.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.kie/kie-api/6.3.0.Final/d722fbba41e8f82d77ec3a7b20e94ad89de3418e/kie-api-6.3.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.kie:kie-ci:6.3.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.kie/kie-ci/6.3.0.Final/e5ba0056dbe1552116821eec7b8b31d344c570e8/kie-ci-6.3.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.kie:kie-internal:6.3.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.kie/kie-internal/6.3.0.Final/1092258146ff0404df7e0fc7f7d706cf6652c04/kie-internal-6.3.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.kie:kie-spring:6.3.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.kie/kie-spring/6.3.0.Final/547dadb13cfb9b0bdb4471086be1346df8b4ee8c/kie-spring-6.3.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.mapstruct:mapstruct:1.0.0.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.mapstruct/mapstruct/1.0.0.Final/794bb2c7d3dd69211deb22857d92fb4c5361be3f/mapstruct-1.0.0.Final.jar" />
+  </library>
+  <library name="Gradle: org.mariadb.jdbc:mariadb-java-client:1.5.9">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.mariadb.jdbc/mariadb-java-client/1.5.9/75d4d6e4cdb9a551a102e92a14c640768174e214/mariadb-java-client-1.5.9.jar" />
+  </library>
+  <library name="Gradle: org.mockito:mockito-core:1.10.19">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.10.19/e8546f5bef4e061d8dd73895b4e8f40e3fe6effe/mockito-core-1.10.19.jar" />
+  </library>
+  <library name="Gradle: org.mvel:mvel2:2.2.6.Final">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.mvel/mvel2/2.2.6.Final/ed1d833f854028773df9619adfc705a513605e90/mvel2-2.2.6.Final.jar" />
+  </library>
+  <library name="Gradle: org.mybatis:mybatis:3.4.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.4.4/31f6ee836efc0a69e07d44f71deb0b0b4fd0f0c4/mybatis-3.4.4.jar" />
+  </library>
+  <library name="Gradle: org.mybatis:mybatis-spring:1.3.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis-spring/1.3.1/5197169e15a43066f177a1cd12a098e1283fdc76/mybatis-spring-1.3.1.jar" />
+  </library>
+  <library name="Gradle: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:1.3.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.mybatis.spring.boot/mybatis-spring-boot-autoconfigure/1.3.0/8c08b7cf8d571ba8673112a04bab343a6a936bb2/mybatis-spring-boot-autoconfigure-1.3.0.jar" />
+  </library>
+  <library name="Gradle: org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.mybatis.spring.boot/mybatis-spring-boot-starter/1.3.0/d063697b00628e49a675b40b9b6e61ed5a79078b/mybatis-spring-boot-starter-1.3.0.jar" />
+  </library>
+  <library name="Gradle: org.objenesis:objenesis:2.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.1/87c0ea803b69252868d09308b4618f766f135a96/objenesis-2.1.jar" />
+  </library>
+  <library name="Gradle: org.ow2.asm:asm:5.0.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.4/da08b8cce7bbf903602a25a3a163ae252435795/asm-5.0.4.jar" />
+  </library>
+  <library name="Gradle: org.projectlombok:lombok:1.16.18">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.18/557d13dcb647038dc687390711ccb5c9b3ffbd60/lombok-1.16.18.jar" />
+  </library>
+  <library name="Gradle: org.skyscreamer:jsonassert:1.4.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.4.0/9cdbb373a06f6513e51e8c545ee6a5e981463edb/jsonassert-1.4.0.jar" />
+  </library>
+  <library name="Gradle: org.slf4j:jcl-over-slf4j:1.7.25">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.25/f8c32b13ff142a513eeb5b6330b1588dcb2c0461/jcl-over-slf4j-1.7.25.jar" />
+  </library>
+  <library name="Gradle: org.slf4j:jul-to-slf4j:1.7.25">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar" />
+  </library>
+  <library name="Gradle: org.slf4j:log4j-over-slf4j:1.7.25">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.25/a87bb47468f47ee7aabbd54f93e133d4215769c3/log4j-over-slf4j-1.7.25.jar" />
+  </library>
+  <library name="Gradle: org.slf4j:slf4j-api:1.7.25">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar" />
+  </library>
+  <library name="Gradle: org.sonatype.plexus:plexus-cipher:1.4">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-cipher/1.4/50ade46f23bb38cd984b4ec560c46223432aac38/plexus-cipher-1.4.jar" />
+  </library>
+  <library name="Gradle: org.sonatype.plexus:plexus-sec-dispatcher:1.3">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-sec-dispatcher/1.3/dedc02034fb8fcd7615d66593228cb71709134b4/plexus-sec-dispatcher-1.3.jar" />
+  </library>
+  <library name="Gradle: org.springframework.amqp:spring-amqp:1.7.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-amqp/1.7.3.RELEASE/b81a7cf8b4ffa2fe831ade73a8f116f14c6c4d3/spring-amqp-1.7.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.amqp:spring-rabbit:1.7.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-rabbit/1.7.3.RELEASE/a1bc6eee84fbb45e4b145ec7d8b515af5a4c090e/spring-rabbit-1.7.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.6.RELEASE/a6e13da038c6eb8b8793795b3189d5ff3f39caa0/spring-boot-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-actuator:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/1.5.6.RELEASE/2a0e4f39d58078159c2929c039e7c7813b325871/spring-boot-actuator-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-actuator-docs:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator-docs/1.5.6.RELEASE/d9a4672b98ca291971b8e6f7e21c6bd8a8928aa1/spring-boot-actuator-docs-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.5.6.RELEASE/436d14480a4ebeaca7cd223ab97790d515f46ad2/spring-boot-autoconfigure-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.5.6.RELEASE/58c72d105fdf41f605c15c243b72300fa78cccd1/spring-boot-starter-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-actuator:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/1.5.6.RELEASE/39fc3d44c95ddf5ca4d0667384ffcbe8b3056d50/spring-boot-starter-actuator-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-amqp:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-amqp/1.5.6.RELEASE/6a6d6396c705a244f333e4e3fee1ecc73715205b/spring-boot-starter-amqp-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-aop:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/1.5.6.RELEASE/6a617e698827e5a123a4a0aa2192d3854908acbe/spring-boot-starter-aop-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-cloud-connectors:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-cloud-connectors/1.5.6.RELEASE/d44c25b7b14d7c0421cc2f63d9632703c9afeceb/spring-boot-starter-cloud-connectors-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/1.5.6.RELEASE/d75804c399bfc78f5ae32a04696aeb71926a49b5/spring-boot-starter-data-jpa-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-freemarker:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-freemarker/1.5.6.RELEASE/fcf4b19a04f4dda6b2d7609a9c3e874cd38a879/spring-boot-starter-freemarker-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-groovy-templates:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-groovy-templates/1.5.6.RELEASE/215a708c04e288d63415de8186850e9a7f186ccd/spring-boot-starter-groovy-templates-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/1.5.6.RELEASE/a2628fded329869fcdb812d7524d03376f4f64ed/spring-boot-starter-jdbc-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-jersey:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jersey/1.5.6.RELEASE/222406908c4fa4ba70723adb3ef5cdad58c54d/spring-boot-starter-jersey-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.5.6.RELEASE/74a50fb623c47d76c71402d8c6cc4ac4ba71d39e/spring-boot-starter-logging-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-security:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/1.5.6.RELEASE/cefa13401ad98d54a01b83c7ac041170e7a7f4f/spring-boot-starter-security-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-test:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/1.5.6.RELEASE/a0e9b338bf492ddc68051e7d4ed62f2cbad067ef/spring-boot-starter-test-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-thymeleaf:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-thymeleaf/1.5.6.RELEASE/efa51e8d562c6d3c95906f77787d232649f7c730/spring-boot-starter-thymeleaf-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.5.6.RELEASE/1d0960e91dfdad2b6b82700ba1613c006355669/spring-boot-starter-tomcat-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-validation:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/1.5.6.RELEASE/90ea50b8390a8fbbc7fdd0a6a86418d28c0e281c/spring-boot-starter-validation-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-web:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.5.6.RELEASE/6f47b0a9e7e39b46b9e66ebdd2bff1c7edee5930/spring-boot-starter-web-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-web-services:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web-services/1.5.6.RELEASE/cf819bec772dd0405587d67f7075850e42b95d16/spring-boot-starter-web-services-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-test:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/1.5.6.RELEASE/7bf97882d08b0ae5f61e5a6ced99451663a02a5d/spring-boot-test-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:1.5.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/1.5.6.RELEASE/d4fdc79a4a1331718465ba4564a0a3555f1e0faa/spring-boot-test-autoconfigure-1.5.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-cloudfoundry-connector:1.2.4.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-cloudfoundry-connector/1.2.4.RELEASE/e8f82e2c8b98a1ce6bce1567e4bfcb77db087361/spring-cloud-cloudfoundry-connector-1.2.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-commons:1.2.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-commons/1.2.3.RELEASE/53a8650cb77bd4eaef85ba729ed9204d6c54ac9f/spring-cloud-commons-1.2.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-config-client:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-config-client/1.3.2.RELEASE/204b8010aabef5c2905cde41dec024671c03dd88/spring-cloud-config-client-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-context:1.2.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-context/1.2.3.RELEASE/40e765f0303e42c5c0c9ca134e95db120da9124/spring-cloud-context-1.2.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-core:1.2.4.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-core/1.2.4.RELEASE/db3b8f95e55df0be9b6b3ed5454ff0dbff8c0ede/spring-cloud-core-1.2.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-heroku-connector:1.2.4.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-heroku-connector/1.2.4.RELEASE/219334217276bdb3af3e0aadad6589a5ba48c072/spring-cloud-heroku-connector-1.2.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-localconfig-connector:1.2.4.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-localconfig-connector/1.2.4.RELEASE/fbb071d5879e0c7d037c9a0ffc5f0bb833b35fd2/spring-cloud-localconfig-connector-1.2.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-netflix-core:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-core/1.3.2.RELEASE/fa20c35f93ba6da236fede581177fb47c4ca532d/spring-cloud-netflix-core-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-netflix-eureka-client:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-eureka-client/1.3.2.RELEASE/93a53caf155ba21c14897f1ef5614dbe6572fdd5/spring-cloud-netflix-eureka-client-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-netflix-eureka-server:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-eureka-server/1.3.2.RELEASE/ff583b8928a6efb8b2ee89053e95aad27f080456/spring-cloud-netflix-eureka-server-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-netflix-hystrix-dashboard:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-hystrix-dashboard/1.3.2.RELEASE/b80b22e69fa2cf910252214ec39b4770fa0a72c9/spring-cloud-netflix-hystrix-dashboard-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-netflix-hystrix-stream:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-hystrix-stream/1.3.2.RELEASE/d8b7efc1f4d1a0f788543d3f79209ecacd2a1c40/spring-cloud-netflix-hystrix-stream-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-sleuth-core:1.2.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-sleuth-core/1.2.2.RELEASE/28707757ffebd161fd3569c13314d0ef1f5c9686/spring-cloud-sleuth-core-1.2.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-sleuth-stream:1.2.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-sleuth-stream/1.2.2.RELEASE/2ea9eea4cca9d38c3f59c3847af2d29eb98ddc68/spring-cloud-sleuth-stream-1.2.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-sleuth-zipkin:1.2.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-sleuth-zipkin/1.2.2.RELEASE/d531c8b59b4f336fc553097ae26049024e574ca1/spring-cloud-sleuth-zipkin-1.2.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-sleuth-zipkin-stream:1.2.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-sleuth-zipkin-stream/1.2.2.RELEASE/204a375ab3509774d2a8f1238db55dd98a916ce5/spring-cloud-sleuth-zipkin-stream-1.2.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-spring-service-connector:1.2.4.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-spring-service-connector/1.2.4.RELEASE/e37e2b4336d067e157500b4f1840756a484cf8cc/spring-cloud-spring-service-connector-1.2.4.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter:1.2.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter/1.2.3.RELEASE/5507ba509c1b401ac827da58eeff45edb8a596fc/spring-cloud-starter-1.2.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-archaius:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-archaius/1.3.2.RELEASE/4a1d788816bc0efe347548a2789504ed9661f742/spring-cloud-starter-archaius-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-config:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-config/1.3.2.RELEASE/fd9db6e0bf14832035b4eab07050903378c33448/spring-cloud-starter-config-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-eureka:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-eureka/1.3.2.RELEASE/2b035636980bffdafa3e20f957460ce714519dc0/spring-cloud-starter-eureka-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-eureka-server:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-eureka-server/1.3.2.RELEASE/6d82f913ede52e9437c53025c5a7ef93c7571597/spring-cloud-starter-eureka-server-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-feign:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-feign/1.3.2.RELEASE/b72764c4562201c7fc76b1275407a09324303e8d/spring-cloud-starter-feign-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-hystrix:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-hystrix/1.3.2.RELEASE/3e163757ca3abd7412c91a648f946ab71a8a3a33/spring-cloud-starter-hystrix-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-hystrix-dashboard/1.3.2.RELEASE/4877c9c5134bc7ef128b13d6901954a130d12b14/spring-cloud-starter-hystrix-dashboard-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-ribbon:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-ribbon/1.3.2.RELEASE/d9e8288d0faa963fc17b4006465a97d81b232077/spring-cloud-starter-ribbon-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-sleuth:1.2.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-sleuth/1.2.2.RELEASE/b790061873e23ddad1e0974579b02bd3eb57883f/spring-cloud-starter-sleuth-1.2.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-stream-rabbit:1.2.1.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-stream-rabbit/1.2.1.RELEASE/2ec6ac758c77d0a5837fd3520632349111080d74/spring-cloud-starter-stream-rabbit-1.2.1.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-zipkin:1.2.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-zipkin/1.2.2.RELEASE/b226f84ac0d79397464e39f758a94babb83f486d/spring-cloud-starter-zipkin-1.2.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-starter-zuul:1.3.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-zuul/1.3.2.RELEASE/a554de6cca1e4b85ed69d5561822d89fc50962ed/spring-cloud-starter-zuul-1.3.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-stream:1.2.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-stream/1.2.2.RELEASE/9042343672f342ed60a6a575e47825c1fa874b6e/spring-cloud-stream-1.2.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-stream-binder-rabbit:1.2.1.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-stream-binder-rabbit/1.2.1.RELEASE/a4bd1f1ffadfdf5eee90cd3953281c5f29ccc37/spring-cloud-stream-binder-rabbit-1.2.1.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-stream-binder-rabbit-core:1.2.1.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-stream-binder-rabbit-core/1.2.1.RELEASE/595ccccf0df88b371904f0e0dede2b222cd390e8/spring-cloud-stream-binder-rabbit-core-1.2.1.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.cloud:spring-cloud-stream-codec:1.2.2.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-stream-codec/1.2.2.RELEASE/cebdab01a34ada0288f6cc4df736aee909bd420d/spring-cloud-stream-codec-1.2.2.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.data:spring-data-commons:1.13.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.13.6.RELEASE/ed21344ea782672928cee7e6bfad655c399c0b94/spring-data-commons-1.13.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.data:spring-data-jpa:1.11.6.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.11.6.RELEASE/e01f5aa1781f54a13a58ad7857eefce677fc1bc3/spring-data-jpa-1.11.6.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.hateoas:spring-hateoas:0.23.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.hateoas/spring-hateoas/0.23.0.RELEASE/678ffa0798f417a794fea592dc8066e325611919/spring-hateoas-0.23.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.integration:spring-integration-amqp:4.3.11.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-amqp/4.3.11.RELEASE/59f78d713effbad1ffc1d5fbccdb68fe9f619e55/spring-integration-amqp-4.3.11.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.integration:spring-integration-jmx:4.3.11.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-jmx/4.3.11.RELEASE/f15f47e886bee31005a86a828b2f2ec12d4b049c/spring-integration-jmx-4.3.11.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.integration:spring-integration-tuple:1.0.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-tuple/1.0.0.RELEASE/4ac09adb2ab6857604784b3e61ef02bcdc974928/spring-integration-tuple-1.0.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.plugin/spring-plugin-core/1.2.0.RELEASE/f380e7760032e7d929184f8ad8a33716b75c0657/spring-plugin-core-1.2.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.plugin/spring-plugin-metadata/1.2.0.RELEASE/97223fc496b6cab31602eedbd4202aa4fff0d44f/spring-plugin-metadata-1.2.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.retry:spring-retry:1.2.1.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.2.1.RELEASE/c43fedb7dfc7e0483679c2f20e09776d98f0813f/spring-retry-1.2.1.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.security.oauth:spring-security-oauth2:2.0.14.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.security.oauth/spring-security-oauth2/2.0.14.RELEASE/2359228d52ed5307beb8491764bc751ce60064cb/spring-security-oauth2-2.0.14.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.security:spring-security-config:4.2.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.2.3.RELEASE/9f3771903616e33521836fd999d63efbfebf90d/spring-security-config-4.2.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.security:spring-security-core:4.2.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.3.RELEASE/5c0e47a47036c94d6fdd02696bf52be6d1adbd4d/spring-security-core-4.2.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.security:spring-security-crypto:4.2.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-crypto/4.2.3.RELEASE/a5c850acc91bff1970fe751d7407df81c4bce3cc/spring-security-crypto-4.2.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.security:spring-security-rsa:1.0.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-rsa/1.0.3.RELEASE/b0b1ee770597b5de1b51e9a889dfd2dc35d251b0/spring-security-rsa-1.0.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.security:spring-security-web:4.2.3.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.3.RELEASE/7a03e737484ca232d7146852f06d067ac21427ac/spring-security-web-4.2.3.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-aop:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.10.RELEASE/3a8c23246045e5e1dbd7d91354741b165e997a88/spring-aop-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-aspects:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.3.10.RELEASE/5d5fea8e67c93910552741cb5b746625ad546bba/spring-aspects-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-beans:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.10.RELEASE/9d89b786f755f9b1da344f10f6f045f927679a72/spring-beans-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-context:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.10.RELEASE/645ce6fdba38448d183a1374506fc24036009869/spring-context-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-context-support:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.3.10.RELEASE/2c507b7441c428b4702c60be52c0d6446ae72673/spring-context-support-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-core:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.10.RELEASE/db1462df62dbedad7244da30ec471390660271c0/spring-core-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-expression:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.10.RELEASE/4975ab542028945ab98fefba772472a40495d7ca/spring-expression-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-jdbc:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.10.RELEASE/91e2f69e633f8eac5d5ef516595556ab7db87f3d/spring-jdbc-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-messaging:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.3.10.RELEASE/498a92969b2d57cc61fec8a35629a95db3ae030b/spring-messaging-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-orm:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.3.10.RELEASE/6450e007fdf2f9340f33b8d7bddb7f1f139b19d1/spring-orm-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-oxm:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-oxm/4.3.10.RELEASE/aaf944a8e302a93452adc3fb65b076623e1c7961/spring-oxm-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-test:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/4.3.10.RELEASE/e82664ba39497626cd29298cb16c161d901bfbee/spring-test-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-tuple:1.0.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tuple/1.0.0.RELEASE/5feaacebc66a885e9f2017063586df2300ce5c68/spring-tuple-1.0.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-tx:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.10.RELEASE/569d30fd8d2050910e0271b838cf927ebb7efcdc/spring-tx-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-web:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.10.RELEASE/6344501cb03cb4787c67cf3f820a471e07b9203b/spring-web-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-webmvc:4.3.10.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.10.RELEASE/6809017a5a76bdaf1957f1cc0a892d448fc6f3df/spring-webmvc-4.3.10.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.ws:spring-ws-core:2.4.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-core/2.4.0.RELEASE/b4c17b5a17f14927efb389edfa0cc7f3fb0ff65b/spring-ws-core-2.4.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.springframework.ws:spring-xml:2.4.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-xml/2.4.0.RELEASE/48edff3499a74c6c0e14f27139a4cb934711d022/spring-xml-2.4.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.thymeleaf:thymeleaf:2.1.5.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf/2.1.5.RELEASE/513bffa3daaac277460c1a0a2dccb228fa40569e/thymeleaf-2.1.5.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.5.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf-spring4/2.1.5.RELEASE/74cb9028e99597b5d71a98e919fd531a7fc290b4/thymeleaf-spring4-2.1.5.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.unbescape:unbescape:1.1.0.RELEASE">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.unbescape/unbescape/1.1.0.RELEASE/ab0db4fe0a6fa89fb8da2a40008a4e63a7f3f5b9/unbescape-1.1.0.RELEASE.jar" />
+  </library>
+  <library name="Gradle: org.webjars:d3js:3.4.11">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.webjars/d3js/3.4.11/6ef8866c242eddc2bb7f6ef5b93028b73d316e23/d3js-3.4.11.jar" />
+  </library>
+  <library name="Gradle: org.webjars:jquery:2.1.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.webjars/jquery/2.1.1/dd89e356066869550b5509c4370f995ad6698d9a/jquery-2.1.1.jar" />
+  </library>
+  <library name="Gradle: org.yaml:snakeyaml:1.17">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.17/7a27ea250c5130b2922b86dea63cbb1cc10a660c/snakeyaml-1.17.jar" />
+  </library>
+  <library name="Gradle: software.amazon.ion:ion-java:1.0.2">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/software.amazon.ion/ion-java/1.0.2/ee9dacea7726e495f8352b81c12c23834ffbc564/ion-java-1.0.2.jar" />
+  </library>
+  <library name="Gradle: stax:stax-api:1.0.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/stax/stax-api/1.0.1/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar" />
+  </library>
+  <library name="Gradle: xmlpull:xmlpull:1.1.3.1">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/xmlpull/xmlpull/1.1.3.1/2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa/xmlpull-1.1.3.1.jar" />
+  </library>
+  <library name="Gradle: xpp3:xpp3_min:1.1.4c">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/xpp3/xpp3_min/1.1.4c/19d4e90b43059058f6e056f794f0ea4030d60b86/xpp3_min-1.1.4c.jar" />
+  </library>
+  <library name="Gradle: APTExternalJar:jsf-impl-messages:1.0">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/APTExternalJar/jsf-impl-messages/1.0/af9e111d1280477974b69f606ba534f518e51ce6/jsf-impl-messages-1.0.jar" />
+  </library>
+  <library name="Gradle: com.sun.faces:jsf-impl:2.1.7">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/com.sun.faces/jsf-impl/2.1.7/812d18d42847e67443fc7f144cd53860897251fd/jsf-impl-2.1.7.jar" />
+  </library>
+  <library name="Gradle: org.sonatype.sisu:sisu-guice:3.1.0:no_aop">
+    <archive path="/Users/localadmin/.gradle/caches/modules-2/files-2.1/org.sonatype.sisu/sisu-guice/3.1.0/97c87d15d749c86b2be1b9809b28321a1d926c7f/sisu-guice-3.1.0-no_aop.jar" />
+  </library>
+  <library name="com.sun.faces:jsf-impl:2.1.7">
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/jsf-impl-2.1.7.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/javax.servlet-api-3.0.1.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/javax.servlet.jsp-api-2.2.1.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/javax.el-api-2.2.1.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/jstl-api-1.2.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/servlet-api-2.5.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/jsp-api-2.1.jar" />
+  </library>
+  <library name="com.sun.faces:jsf-api:2.1.7">
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/jsf-api-2.1.7.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/javax.servlet-api-3.0.1.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/javax.servlet.jsp-api-2.2.1.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/javax.el-api-2.2.1.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/jstl-api-1.2.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/servlet-api-2.5.jar" />
+    <archive path="/Users/localadmin/workspace/roadio/prototype/prototype-service/lib/jsp-api-2.1.jar" />
+  </library>
+  <library name="groovy-2.4.12">
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/ant-junit-1.9.4.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/ant-launcher-1.9.4.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/bsf-2.4.0.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/commons-cli-1.2.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/commons-logging-1.2.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/gpars-1.2.1.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-ant-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-bsf-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-console-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-docgenerator-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-groovydoc-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-groovysh-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-jmx-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-json-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-jsr223-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-nio-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-servlet-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-sql-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-swing-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-templates-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-test-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-testng-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/groovy-xml-2.4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/hamcrest-core-1.3.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/ivy-2.4.0.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/jansi-1.11.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/jcommander-1.47.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/jline-2.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/jsp-api-2.0.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/jsr166y-1.7.0.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/junit-4.12.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/multiverse-core-0.7.0.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/qdox-1.12.1.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/servlet-api-2.4.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/testng-6.8.13.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/xmlpull-1.1.3.1.jar" />
+    <archive path="/Users/localadmin/groovy-2.4.12/lib/xstream-1.4.7.jar" />
+  </library>
+</eclipse-userlibraries>
+

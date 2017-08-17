@@ -1,0 +1,10 @@
+applications:
+- name: RoadIo-Prototype
+  memory: 1G
+  instances: 2
+  env:
+    JBP_CONFIG_CONTAINER_CERTIFICATE_TRUST_STORE: '{enabled: true}'
+    JBP_CONFIG_OPEN_JDK_MEMORY_CALCULATOR: '[memory_sizes: {metaspace: 128m}]'
+    SPRING_PROFILES_ACTIVE: 'prod'
+  host: RoadIo-Prototype
+  buildpack: 'java_buildpack_offline'

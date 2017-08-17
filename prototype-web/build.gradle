@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        maven { url "https://artifactory.allstate.com/artifactory/libs-release" }
+    }
+    dependencies {
+        classpath "com.moowork.gradle:gradle-node-plugin:1.1.1"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: "com.moowork.node"
+
+
+buildDir = 'dist'
+
+task webjar(type: Jar, dependsOn: 'jar') {
+    from(fileTree('build')) {
+        into 'META-INF/resources'
+    }
+}
+
+clean {
+    delete 'dist'
+    delete 'build'
+}
