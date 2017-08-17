@@ -9,20 +9,22 @@ import * as mapActionTypes from "./mapActionTypes";
 //   }
 // }
 
-export function loadMapAction(google, map) {
+export function loadMapAction(google, maps, map) {
   return {
     type: mapActionTypes.INIT_MAP,
-    loaded: true,
+    // loaded: true,
+    maps: maps,
     google: google,
     map: map
   }
 }
 
 
-export function dropMarkerAction (coordinate) {
+export function dropMarkerAction (map, latLng) {
 
   return {
     type: mapActionTypes.DROP_MARKER,
-    coordinate: coordinate
+    map: map,
+    latLng: latLng
   }
 }

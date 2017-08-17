@@ -28,8 +28,12 @@ export class Map extends Component {
         streetViewControl: true,
         scrollwheel: true
       }
-    }
+    };
   }
+
+  // clickListener(event) {
+  //   this.props.dropMarkerAction(this.props.map, event.latLng);
+  // }
 
   componentDidMount() {
     if(this.props) {
@@ -41,6 +45,12 @@ export class Map extends Component {
       let map = new maps.Map(node, this.state.mapOptions);
       this.props.loadMapAction(google, map);
     }
+  }
+
+  get markers() {
+    return this.props.markers.map((marker, index) => {
+
+    });
   }
 
   render() {
@@ -55,7 +65,9 @@ const mapStateToProps = (state) => {
   return {
     apiKey: state.mapReducer.apiKey,
     libraries: state.mapReducer.libraries,
-    version: state.mapReducer.version
+    version: state.mapReducer.version,
+    map: state.mapReducer.map,
+    markers: state.mapReducer.markers
   };
 };
 export default connect(mapStateToProps, {loadMapAction})(Map);
