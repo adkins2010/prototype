@@ -13,19 +13,15 @@ import configureStore from "./store/configureStore";
 //     }
 // };
 
-const initialState = {
-  mapCenterCoordinate : new Coordinate(35.30636737274465, -80.76664034949033),
-  streetViewCoordinate: new Coordinate(35.3043098, -80.76405469999997)
-};
-
-const store = configureStore(initialState);
-// const store = createStore(mapReducer, initialState);
-render(
-  <Provider store={store}>
-    <Map mapCenterCoordinate={initialState.mapCenterCoordinate} streetViewCoordinate={initialState.streetViewCoordinate}/>
-  </Provider>,
-  document.getElementById('root')
-);
+let mapCenterCoordinate = new Coordinate(35.30636737274465, -80.76664034949033),
+  streetViewCoordinate = new Coordinate(35.3043098, -80.76405469999997);
+const store = configureStore();
+// render(
+//   <Provider store={store}>
+//     <Map mapCenterCoordinate={mapCenterCoordinate} streetViewCoordinate={streetViewCoordinate}/>
+//   </Provider>,
+//   document.getElementById('root')
+// );
 
 // const userId = 1;
 //
@@ -52,3 +48,4 @@ render(
 //             document.getElementById('root')
 //         );
 //     });
+

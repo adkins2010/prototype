@@ -1,11 +1,10 @@
-import Coordinate from '../Coordinate'
 import * as mapActionTypes from '../actions/mapActionTypes';
+import * as icons from 'react-pattern-library-icons';
 
 const initialState = {
   apiKey: "AIzaSyDZHZHHITCFz-Xyi0XRIFH1BoAOH7YinPY",
   libraries: ["places"],
   version: '3.22',
-  google: null,
   map: null,
   maps: null,
   markers: []
@@ -19,10 +18,10 @@ const mapReducer = (state = initialState, action) => {
     case mapActionTypes.INIT_MAP:
       state = {
         ...state,
-        google: action.google,
-        maps: action.maps,
-        map: action.map
+        map: action.map,
+        maps: action.maps
       };
+
       break;
     case mapActionTypes.DROP_MARKER:
       state = {
@@ -36,7 +35,7 @@ const mapReducer = (state = initialState, action) => {
           map: state.map,
           icon: {
             path: icons.FemaleC,
-            fillColor: "#254B6E",
+            fillColor: "#c682be",
             anchor: new state.maps.Point(0,0),
             strokeWeight: 0,
             scale: .6

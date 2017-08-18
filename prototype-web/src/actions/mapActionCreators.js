@@ -9,13 +9,11 @@ import * as mapActionTypes from "./mapActionTypes";
 //   }
 // }
 
-export function loadMapAction(google, maps, map) {
+export function loadMapAction(map,maps) {
   return {
     type: mapActionTypes.INIT_MAP,
-    // loaded: true,
-    maps: maps,
-    google: google,
-    map: map
+    map: map,
+    maps:maps
   }
 }
 

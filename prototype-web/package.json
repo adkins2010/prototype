@@ -8,6 +8,7 @@
     "google-maps-react": "^1.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-google-maps": "^7.2.0",
     "react-pattern-library-icons": "^1.8.3",
     "react-redux": "^5.0.6",
     "redux": "^3.5.2",
@@ -44,7 +45,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/ --cache true"
   },
   "eslintConfig": {
     "extends": "react-app",

@@ -1,8 +1,7 @@
-'use strict';
 import React, {Component} from 'react';
 import { loadMapAction } from "../../actions/mapActionCreators";
 import '../style/Map.css';
-import {ScriptLoader} from '../../lib/ScriptLoader'
+import {ScriptLoader} from '../../lib/ScriptLoader';
 import GoogleApi from '../../lib/GoogleApi';
 import * as ReactDOM from "react-dom";
 import {connect} from "react-redux";
@@ -11,13 +10,8 @@ export class Map extends Component {
   constructor(props) {
     super(props);
     this.script = () => {
-      return ScriptLoader(GoogleApi(this.props.apiKey, this.props.libraries,this.props.version))
+      return ScriptLoader(GoogleApi(this.props.apiKey, this.props.libraries));
     };
-    // this.state = {
-    //   loaded: false,
-    //   google: null,
-    //   map: null
-    // };
     this.state = {
       mapOptions: {
         center: {
@@ -25,37 +19,65 @@ export class Map extends Component {
           lng: this.props.mapCenterCoordinate.longitude
         },
         zoom: 14,
-        streetViewControl: true,
+        // streetViewControl: true,
         scrollwheel: true
       }
     };
+    this.loadMap = this.loadMap.bind(this);
   }
 
-  // clickListener(event) {
-  //   this.props.dropMarkerAction(this.props.map, event.latLng);
-  // }
-
-  componentDidMount() {
+  loadMap() {
     if(this.props) {
-      window.google = this.script();
-      const google = window.google;
-      const maps = window.google.maps;
-      const mapRef = this.refs.map;
-      const node = ReactDOM.findDOMNode(mapRef);
-      let map = new maps.Map(node, this.state.mapOptions);
-      this.props.loadMapAction(google, map);
+      this.script().then((result) => {
+        // console.dir(result);
+        // window.google = result;
+        // const google = window.google;
+        const maps = window.google.maps;
+        if(maps) {
+          // console.log(maps);
+          const mapRef = this.refs.map;
+          const node = ReactDOM.findDOMNode(mapRef);
+          let map = new maps.Map(node, ...this.state.mapOptions);
+          this.props.loadMapAction(map, maps);
+          // addMarker(haightAshbury);
+        }
+      });
     }
   }
 
-  get markers() {
-    return this.props.markers.map((marker, index) => {
+  // getDefaultProps() {
+  //   this.loadMap();
+  // }
 
-    });
+  // getInitialState() {
+  //   this.loadMap();
+  // }
+
+  // componentDidMount() {
+  //   this.loadMap();
+  // }
+
+  componentWillMount() {
+    this.loadMap();
   }
+  //
+  // componentDidUpdate() {
+  //   this.loadMap();
+  // }
+  //
+  // componentWillUnmount() {
+  //   this.loadMap();
+  // }
+
+  // get markers() {
+  //   return this.props.markers.map((marker, index) => {
+  //
+  //   });
+  // }
 
   render() {
     return (
-      <div ref="map">
+      <div id="map" ref="map">
 
       </div>
     );
@@ -67,6 +89,7 @@ const mapStateToProps = (state) => {
     libraries: state.mapReducer.libraries,
     version: state.mapReducer.version,
     map: state.mapReducer.map,
+    maps: state.mapReducer.maps,
     markers: state.mapReducer.markers
   };
 };

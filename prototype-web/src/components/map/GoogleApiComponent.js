@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import {ScriptLoader} from '../../lib/ScriptLoader'
 import GoogleApi from '../../lib/GoogleApi';
 
-const mapConfig = {};
-
 export class GoogleApiComponent extends Component {
   constructor(props, context) {
     super(props, context);
@@ -17,6 +15,5 @@ export class GoogleApiComponent extends Component {
     window.handleGoogleClientLoad = function() {
       // log to console
     }
-
   }
 }
