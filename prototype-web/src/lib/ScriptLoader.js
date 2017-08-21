@@ -24,25 +24,28 @@ export const ScriptLoader = function (scriptSrc) {
 
   return new Promise(function (resolve, reject) {
     var script = document.createElement("script"),
-      head = document.getElementsByTagName("head")[0],
+      body = document.getElementsByTagName("body")[0],
       resolved = false,
       errored = false;
 
-    script.type = "text/javascript";
-    script.src = scriptSrc;
+      script.type = "text/javascript";
+      script.src = scriptSrc;
 
-    script.onload = script.onreadystatechange = function () {
-      if (!resolved && (!this.readyState || this.readyState === "complete")) {
-        resolved = true;
-        resolve(this);
-      }
-    };
-    script.onerror = script.onabort = function () {
-      if (!errored && (!this.readyState || this.readyState === "error")) {
-        errored = true;
-        reject(this);
-      }
-    };
-    head.appendChild(script);
+      script.onload = script.onreadystatechange = function () {
+        if (!resolved && (!this.readyState || this.readyState === "complete")) {
+          resolved = true;
+          resolve(this);
+        }
+      };
+      script.onerror = script.onabort = function () {
+        if (!errored && (!this.readyState || this.readyState === "error")) {
+          errored = true;
+          reject(this);
+        }
+      };
+      body.appendChild(script);
   });
-};
+}
+
+;
+

@@ -10,7 +10,7 @@ export class Map extends Component {
   constructor(props) {
     super(props);
     this.script = () => {
-      return ScriptLoader(GoogleApi(this.props.apiKey, this.props.libraries));
+      return ScriptLoader(GoogleApi(this.props.apiKey, this.props.libraries, "loadMap"));
     };
     this.state = {
       mapOptions: {

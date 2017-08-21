@@ -1,10 +1,11 @@
 const GOOGLE_API_URL = "https://maps.googleapis.com/maps/api/js";
-export const GoogleApi = function(apiKey, libraries, googleVersion) {
+export const GoogleApi = function(apiKey, libraries, callback, googleVersion) {
   const getUrl = () => {
     let params = {
       key: apiKey,
-      libraries: libraries.join(',')/*,
-      v: googleVersion*/
+      libraries: libraries.join(','),
+      /*v: googleVersion*/
+      callback: callback
     };
     if(googleVersion) {
       params.v = googleVersion;
@@ -12,7 +13,8 @@ export const GoogleApi = function(apiKey, libraries, googleVersion) {
     let paramStr = Object.keys(params).filter(index => !!params[index]).map((key) => {
       return `${key}=${params[key]}`
     }).join('&');
-    return `${GOOGLE_API_URL}?${paramStr}`;
+    let callback = "callback";
+    return `${GOOGLE_API_URL}?${paramStr}&callback=${callback}`;
   };
   return getUrl();
 };
