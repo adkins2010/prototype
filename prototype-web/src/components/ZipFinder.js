@@ -69,7 +69,7 @@ export default class ZipFinder extends Component {
       }
     ]) {
 
-    let form = document.createElement('form');
+    let resultsDiv = document.createElement('div');
 
     results.forEach(function(result, i) {
       var divResult = document.createElement('div');
@@ -106,34 +106,22 @@ export default class ZipFinder extends Component {
         addressSpan.appendChild(document.createElement('br'));
         divResult.appendChild(addressSpan);
       });
-      divResult.innerHTML += "<h5>GPS Details:</h5>";
+      let geometryDetailsHeader = document.createElement('h5');
+      geometryDetailsHeader.innerHTML = "Geometry Details:";
+      divResult.appendChild(geometryDetailsHeader);
       let geometry = result.geometry;
       let geometryDiv = document.createElement('div');
       let boundsSpan = document.createElement('span');
       boundsSpan.innerHTML += `<label>NorthEast Boundary (lat, long):</label>&nbsp;<input disabled value=${geometry.bounds.northeast.lat} />,<input disabled value=${geometry.bounds.northeast.lng} /><br/>`;
       boundsSpan.innerHTML += `<label>SouthWest Boundary (lat, long):</label>&nbsp;<input disabled value=${geometry.bounds.southwest.lat} />,<input disabled value=${geometry.bounds.southwest.lng} /><br/>`;
-      boundsSpan.innHTML += `<label>location (lat, long):</label>&nbsp;<input disabled value=${geometry.location.lat} />,<input disabled value=${geometry.location.lng} /><br/>`;
+      boundsSpan.innerHTML += `<label>Location (lat, long):</label>&nbsp;<input disabled value=${geometry.location.lat} />,<input disabled value=${geometry.location.lng} /><br/>`;
       geometryDiv.appendChild(boundsSpan);
       divResult.appendChild(geometryDiv);
-      form.appendChild(divResult);
+      resultsDiv.appendChild(divResult);
     });
-    document.getElementsByTagName("body")[0].appendChild(form);
-    if ( console && console.log ) {
-      console.log( "Sample of data:", results.slice( 0, 100 ) );
-    }
+    document.getElementsByTagName("body")[0].appendChild(resultsDiv);
     // return div;
   }
-//   $( document ).ready(function() {
-//     $.ajax({
-//       url: "https://maps.googleapis.com/maps/api/geocode/json?address=28262&key=AIzaSyDZHZHHITCFz-Xyi0XRIFH1BoAOH7YinPY",
-//       dataType: 'json'
-//     })
-//       .done(function( data ) {
-// //            $('body').innerHTML = "<form></form>";
-//         var results = data.results;
-//         handleResults(results);
-//       });
-//   });
   render() {
     // console.log("City State: ", cityName, stateName);
     this.handleResults();
