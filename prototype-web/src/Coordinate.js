@@ -1,28 +1,28 @@
 
-// function Coordinate(latitude, longitude) {
-//   this.latitude = latitude;
-//   this.longitude = longitude;
+// function Coordinate(lat, lng) {
+//   this.lat = lat;
+//   this.lng = lng;
 // }
 //
 // Coordinate.prototype.getLatitude = () => {
-//   return this.latitude;
+//   return this.lat;
 // };
 //
 // Coordinate.prototype.getLongitude = () => {
-//   return this.longitude;
+//   return this.lng;
 // };
 //
-// Coordinate.prototype.setLatitude = (latitude) => {
-//   this.latitude = latitude;
+// Coordinate.prototype.setLatitude = (lat) => {
+//   this.lat = lat;
 // };
 //
-// Coordinate.prototype.setLongitude = (longitude) => {
-//   this.longitude = longitude;
+// Coordinate.prototype.setLongitude = (lng) => {
+//   this.lng = lng;
 // };
 
 export default class Coordinate {
-  constructor(latitude, longitude) {
-    this.latitude = latitude;
-    this.longitude = longitude;
+  constructor(lat, lng) {
+    this.lat = lat;
+    this.lng = lng;
   }
 }

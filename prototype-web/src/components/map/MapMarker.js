@@ -25,8 +25,8 @@ export class MapMarker extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    map: state.mapReducer.map,
-    markers: state.mapReducer.markers
+    map: state.mapReducerAlt.map,
+    markers: state.mapReducerAlt.markers
   };
 };
 export default connect(mapStateToProps, {dropMarkerAction})(MapMarker);

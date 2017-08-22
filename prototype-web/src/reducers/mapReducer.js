@@ -2,52 +2,38 @@ import * as mapActionTypes from '../actions/mapActionTypes';
 import * as icons from 'react-pattern-library-icons';
 
 const initialState = {
+  markers: [{
+    position: {
+      lat: 25.0112183,
+      lng: 121.52067570000001,
+    },
+    key: `Taiwan`,
+    defaultAnimation: 2,
+  }],
   apiKey: "AIzaSyDZHZHHITCFz-Xyi0XRIFH1BoAOH7YinPY",
-  libraries: ["places"],
-  version: '3.22',
-  map: null,
-  maps: null,
-  markers: []
+  map: null
 };
+
 
 const mapReducer = (state = initialState, action) => {
   if(action === null || action === undefined) {
     return state;
   }
   switch (action.type) {
-    case mapActionTypes.INIT_MAP:
+    case mapActionTypes.LOAD_MAP:
       state = {
         ...state,
-        map: action.map,
-        maps: action.maps
+        map: action.map
       };
-
       break;
-    case mapActionTypes.DROP_MARKER:
+    case mapActionTypes.SET_MARKERS:
       state = {
         ...state,
-        map: action.map,
-        maps: action.maps,
+        markers: action.markers
       };
-      let marker = new state.maps.Marker(
-        {
-          position: action.latLng,
-          map: state.map,
-          icon: {
-            path: icons.FemaleC,
-            fillColor: "#c682be",
-            anchor: new state.maps.Point(0,0),
-            strokeWeight: 0,
-            scale: .6
-          }
-        }
-      );
-      state.markers.push(marker);
-      break;
     default:
       break;
   }
   return state;
 };
-
 export default mapReducer;

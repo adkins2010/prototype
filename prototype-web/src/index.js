@@ -2,9 +2,8 @@ import React from 'react';
 import {render} from 'react-dom';
 import {Provider} from 'react-redux'
 import Coordinate from "./Coordinate";
-import Map from "./components/map/Map";
 import configureStore from "./store/configureStore";
-import ZipFinder from "./components/ZipFinder";
+import AddressGpsRetriever from "./components/AddressGpsRetriever";
 
 
 // const options = {
@@ -14,12 +13,13 @@ import ZipFinder from "./components/ZipFinder";
 //     }
 // };
 
-let mapCenterCoordinate = new Coordinate(35.30636737274465, -80.76664034949033),
-  streetViewCoordinate = new Coordinate(35.3043098, -80.76405469999997);
+let mapCenterCoordinate = new Coordinate(35.3301529, -80.7325287),
+  streetViewCoordinate = new Coordinate(35.3043098, -80.76405469999997),
+  address = "28262";
 const store = configureStore();
 render(
   <Provider store={store}>
-    <ZipFinder/>
+    <AddressGpsRetriever/>
   </Provider>,
   document.getElementById('root')
 );

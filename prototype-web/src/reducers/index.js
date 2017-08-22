@@ -1,7 +1,11 @@
 import * as Redux from 'redux'
-import mapReducer from './mapReducer'
+// import mapReducerAlt from './mapReducerAlt';
+import mapReducer from './mapReducer';
+import addressReducer from "./addressReducer";
 
 const rootReducer = Redux.combineReducers({
+  // mapReducerAlt,
+  addressReducer,
   mapReducer
 });
 

@@ -19,8 +19,8 @@ export class MapAlt extends Component {
         center: {
           // lat: 35.30636737274465,
           // lng: -80.76664034949033
-          lat: props.mapCenterCoordinate.latitude,
-          lng: props.mapCenterCoordinate.longitude
+          lat: props.mapCenterCoordinate.lat,
+          lng: props.mapCenterCoordinate.lng
         },
         zoom: 14,
         streetViewControl: true,
@@ -30,8 +30,8 @@ export class MapAlt extends Component {
         position: {
           // lat: 35.3043098,
           // lng: -80.76405469999997
-          lat: props.streetViewCoordinate.latitude,
-          lng: props.streetViewCoordinate.longitude
+          lat: props.streetViewCoordinate.lat,
+          lng: props.streetViewCoordinate.lng
         },
         pov: {
           heading: 34,
@@ -61,8 +61,8 @@ export class MapAlt extends Component {
     debugger;
     let marker = {
       position:{
-        lat: this.props.streetViewCoordinate.latitude,
-        lng: this.props.streetViewCoordinate.longitude
+        lat: this.props.streetViewCoordinate.lat,
+        lng: this.props.streetViewCoordinate.lng
       },
       map: map,
       title: "Marker",

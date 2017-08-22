@@ -1,84 +1,71 @@
+import _ from "lodash";
 import React, {Component} from 'react';
-import { loadMapAction } from "../../actions/mapActionCreators";
+import {loadMapAction, centerMapAction, setMarkersAction} from "../../actions/mapActionCreators";
 import '../style/Map.css';
-import {ScriptLoader} from '../../lib/ScriptLoader';
-import GoogleApi from '../../lib/GoogleApi';
-import * as ReactDOM from "react-dom";
 import {connect} from "react-redux";
+import {withGoogleMap, GoogleMap, Marker} from "react-google-maps";
 
-export class Map extends Component {
+
+const GoogleMapWrapper = withGoogleMap(props => (
+  <GoogleMap
+    ref={props.onMapLoad}
+    defaultZoom={3}
+    defaultCenter={this.props.mapCenterCoordinate}
+    onClick={props.onMapClick}
+  >
+    {props.markers.map(marker => (
+      <Marker
+        {...marker}
+      onRightClick={() => this.props.onMarkerRightClick(marker)}
+      />
+    ))}
+  </GoogleMap>
+));
+
+class Map extends Component {
   constructor(props) {
     super(props);
-    this.script = () => {
-      return ScriptLoader(GoogleApi(this.props.apiKey, this.props.libraries, "loadMap"));
-    };
-    this.state = {
-      mapOptions: {
-        center: {
-          lat: this.props.mapCenterCoordinate.latitude,
-          lng: this.props.mapCenterCoordinate.longitude
-        },
-        zoom: 14,
-        // streetViewControl: true,
-        scrollwheel: true
-      }
-    };
     this.loadMap = this.loadMap.bind(this);
+    this.dropMarker = this.dropMarker.bind(this);
+    this.removeMarker = this.removeMarker.bind(this);
   }
 
-  loadMap() {
-    if(this.props) {
-      this.script().then((result) => {
-        // console.dir(result);
-        // window.google = result;
-        // const google = window.google;
-        const maps = window.google.maps;
-        if(maps) {
-          // console.log(maps);
-          const mapRef = this.refs.map;
-          const node = ReactDOM.findDOMNode(mapRef);
-          let map = new maps.Map(node, ...this.state.mapOptions);
-          this.props.loadMapAction(map, maps);
-          // addMarker(haightAshbury);
-        }
-      });
-    }
+  loadMap(map) {
+    this.props.loadMapAction(map);
   }
 
-  // getDefaultProps() {
-  //   this.loadMap();
-  // }
-
-  // getInitialState() {
-  //   this.loadMap();
-  // }
-
-  // componentDidMount() {
-  //   this.loadMap();
-  // }
-
-  componentWillMount() {
-    this.loadMap();
+  dropMarker(event) {
+    const nextMarkers = [
+      ...this.state.markers, {
+        position: event.latLng,
+        defaultAnimation: 2,
+        key: Date.now()
+      }
+    ];
+    setMarkersAction(nextMarkers);
   }
-  //
-  // componentDidUpdate() {
-  //   this.loadMap();
-  // }
-  //
-  // componentWillUnmount() {
-  //   this.loadMap();
-  // }
 
-  // get markers() {
-  //   return this.props.markers.map((marker, index) => {
-  //
-  //   });
-  // }
+  removeMarker(targetMarker) {
+    const nextMarkers = this.props.markers.filter(marker => marker!==targetMarker);
+    setMarkersAction(nextMarkers);
+  }
 
   render() {
     return (
-      <div id="map" ref="map">
-
+      <div ref = "mapDiv">
+        <span onload = {this.loadMap}>Loading <img src = "/images/loading.gif" style = {{"width": "15px", "vertical-align": "bottom"}}/></span>
+        <GoogleMapWrapper
+          containerElement={
+            <div style={{ height: `100%` }} />
+          }
+          mapElement={
+            <div style={{ height: `100%` }} />
+          }
+          onMapLoad={this.loadMap}
+          onMapClick={this.dropMarker}
+          markers={this.props.markers}
+          onMarkerRightClick={this.removeMarker}
+        />
       </div>
     );
   }
@@ -86,14 +73,9 @@ export class Map extends Component {
 const mapStateToProps = (state) => {
   return {
     apiKey: state.mapReducer.apiKey,
-    libraries: state.mapReducer.libraries,
-    version: state.mapReducer.version,
     map: state.mapReducer.map,
-    maps: state.mapReducer.maps,
-    markers: state.mapReducer.markers
+    markers: state.mapReducer.markers,
+    mapCenterCoordinate: state.mapReducer.mapCenterCoordinate
   };
 };
-export default connect(mapStateToProps, {loadMapAction})(Map);
-
-// export default Map;
-
+export default connect(mapStateToProps, {loadMapAction, centerMapAction, setMarkersAction})(Map);

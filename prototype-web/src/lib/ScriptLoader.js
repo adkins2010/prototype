@@ -25,21 +25,21 @@ export const ScriptLoader = function (scriptSrc) {
   return new Promise(function (resolve, reject) {
     var script = document.createElement("script"),
       body = document.getElementsByTagName("body")[0],
-      resolved = false,
-      errored = false;
+      success = false,
+      error = false;
 
       script.type = "text/javascript";
       script.src = scriptSrc;
 
       script.onload = script.onreadystatechange = function () {
-        if (!resolved && (!this.readyState || this.readyState === "complete")) {
-          resolved = true;
+        if (!success && (!this.readyState || this.readyState === "complete")) {
+          success = true;
           resolve(this);
         }
       };
       script.onerror = script.onabort = function () {
-        if (!errored && (!this.readyState || this.readyState === "error")) {
-          errored = true;
+        if (!error && (!this.readyState || this.readyState === "error")) {
+          error = true;
           reject(this);
         }
       };
