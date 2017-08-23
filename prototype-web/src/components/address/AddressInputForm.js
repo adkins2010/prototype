@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import {addressInputAction,updateAddressAction,updateAddressResultsAction} from "../../actions/addressActionCreators";
+import {addressInputAction,updateAddressAction,updateAddressResultsAction,formatAddressAction} from "../../actions/addressActionCreators";
 import {centerMapAction} from "../../actions/mapActionCreators";
 import '../style/Address.css';
 import '../style/Errors.css';
@@ -10,7 +10,7 @@ var rp = require('request-promise');
 class AddressInputForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {stylePath: 'style1.css'};
+
     this.updateAddressLine1 = this.updateAddressLine1.bind(this);
     this.updateAddressLine2 = this.updateAddressLine2.bind(this);
     this.updatePostalCode = this.updatePostalCode.bind(this);
@@ -33,9 +33,9 @@ class AddressInputForm extends Component {
 
   }
 
-  retrieveMapData() {
+  retrieveMapData(address) {
     rp({
-      uri: GoogleApi(this.props.apiKey, null, null, [{address: this.props.address}], this.props.subDir),
+      uri: GoogleApi(this.props.apiKey, null, null, [{address: address}], this.props.subDir),
       headers: {
         'User-Agent': 'Request-Promise'
       },
@@ -53,7 +53,12 @@ class AddressInputForm extends Component {
       };
       let streetNo = -1;
       let route = null;
+      let formattedAddress = null;
+      let me = this;
       this.props.results.forEach(function (result) {
+        formattedAddress = result.formatted_address;
+        // console.dir(formattedAddress);
+
         let addressComponents = result.address_components;
         addressComponents.forEach( (ac) => {
           if(ac.types[0] === "postal_code") {
@@ -75,8 +80,15 @@ class AddressInputForm extends Component {
             route = ac.long_name;
           }
         });
+        me.props.addressInputAction(addressInput);
+        me.props.formatAddressAction({formattedAddress: formattedAddress});
+        /**
+         * It doesn't like for me to try to update the state tree with every iteration of the
+         * results array.  I won't see the changes if I try to update from here.  Also
+         */
       });
       this.props.addressInputAction(addressInput);
+      this.props.formatAddressAction({formattedAddress: formattedAddress});
     }).catch(error => {
       // alert(error)
     });
@@ -101,7 +113,7 @@ class AddressInputForm extends Component {
     });
     // event.target.value + this.props.addressInput.addressLine2 + this.props.addressInput.city + this.props.addressInput.state + this.props.addressInput.postalCode;
     this.props.updateAddressAction(address);
-    // this.retrieveMapData();
+    this.retrieveMapData(address);
   }
 
   updateAddressLine2(event) {
@@ -122,7 +134,7 @@ class AddressInputForm extends Component {
       address += " " + this.props.addressInput[key];
     });
     this.props.updateAddressAction(address);
-    // this.retrieveMapData();
+    this.retrieveMapData(address);
   }
 
   updateCity(event) {
@@ -143,7 +155,7 @@ class AddressInputForm extends Component {
       address += " " + this.props.addressInput[key];
     });
     this.props.updateAddressAction(address);
-    // this.retrieveMapData();
+    this.retrieveMapData(address);
   }
 
   updateState(event) {
@@ -164,7 +176,7 @@ class AddressInputForm extends Component {
       address += " " + this.props.addressInput[key];
     });
     this.props.updateAddressAction(address);
-    // this.retrieveMapData();
+    this.retrieveMapData(address);
   }
 
   updatePostalCode(event) {
@@ -186,7 +198,7 @@ class AddressInputForm extends Component {
     });
 
     this.props.updateAddressAction(address);
-    // this.retrieveMapData();
+    this.retrieveMapData(address);
   }
 
   render() {
@@ -203,7 +215,7 @@ class AddressInputForm extends Component {
               className = "address-form-input"
               id = "address-line-1-input"
               onChange = {this.updateAddressLine1}
-              onKeyUp = {this.retrieveMapData}
+              // onKeyUp = {this.retrieveMapData}
               value={this.props.addressInput.addressLine1}
             />
             <label
@@ -223,6 +235,7 @@ class AddressInputForm extends Component {
               type = "text"
               className = "address-form-input"
               id = "address-line-2-input"
+              onChange = {this.updateAddressLine2}
               value={this.props.addressInput.addressLine2}
             />
           </div>
@@ -237,7 +250,7 @@ class AddressInputForm extends Component {
               className = "address-form-input"
               id = "city-input"
               onChange = {this.updateCity}
-              onKeyUp = {this.retrieveMapData}
+              // onKeyUp = {this.retrieveMapData}
               value={this.props.addressInput.city}/>
             <label
               className = {"error-description-label" + (this.props.addressInput.cityError ? " error-display" : "")}
@@ -256,7 +269,7 @@ class AddressInputForm extends Component {
               type = "text"
               className = "address-form-input"
               onChange = {this.updateState}
-              onKeyUp = {this.retrieveMapData}
+              // onKeyUp = {this.retrieveMapData}
               value={this.props.addressInput.state}/>
             <label
               className = {"error-description-label" + (this.props.addressInput.stateError ? " error-display" : "")}
@@ -289,7 +302,7 @@ class AddressInputForm extends Component {
                                                                                                    empty.</label>
           </div>
         </div>
-
+        <strong>Formatted Address</strong>:&nbsp;{this.props.formattedAddress}
       </div>
     );
   }
@@ -301,7 +314,8 @@ const mapStateToProps = (state) => {
     address: state.addressReducer.address,
     results: state.addressReducer.results,
     mapCenterCoordinate: state.mapReducer.mapCenterCoordinate,
-    addressInput: state.addressReducer.addressInput
+    addressInput: state.addressReducer.addressInput,
+    formattedAddress: state.addressReducer.formattedAddress
   };
 };
-export default connect(mapStateToProps, {addressInputAction,updateAddressAction,updateAddressResultsAction, centerMapAction})(AddressInputForm);
+export default connect(mapStateToProps, {addressInputAction,updateAddressAction,updateAddressResultsAction,formatAddressAction, centerMapAction})(AddressInputForm);

@@ -14,6 +14,13 @@ export function updateAddressAction(address) {
   }
 }
 
+export function formatAddressAction(formattedAddress) {
+  return {
+    type: addressActionTypes.FORMAT_ADDRESS,
+    formattedAddress: formattedAddress
+  }
+}
+
 export function addressInputAction (addressInput) {
 
   return {

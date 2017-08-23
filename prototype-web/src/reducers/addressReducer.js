@@ -6,6 +6,7 @@ const initialState = {
   address: "",
   results: [
   ],
+  formattedAddress: "",
   addressInput: {
     addressLine1: "8505 IBM Drive",
     addressLine2: "",
@@ -36,6 +37,12 @@ const addressReducer = (state = initialState, action) => {
       };
       state.address = action.address;
       break;
+    case addressActionTypes.FORMAT_ADDRESS:
+      state = {
+        ...state,
+      };
+      state.formattedAddress = action.formattedAddress;
+      break;
     case addressActionTypes.ADDRESS_INPUT:
       state = {
         ...state,
@@ -49,6 +56,7 @@ const addressReducer = (state = initialState, action) => {
       // } else if(action.addressInput.cityError) {
       //   state.addressInput.cityError = action.addressInput.cityError;
       // }
+      break;
     default:
       break;
   }
