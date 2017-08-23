@@ -106,10 +106,6 @@ export class MapAlt extends Component {
   render () {
     return (
       <div id="mapDiv">
-        {/*<!--*/}
-        {/*<label>latitude</label>: <input type="text" disabled value={this.state.streetOptions.position.lat}/>*/}
-        {/*<label>longitude</label>: <input type="text" disabled value={this.state.streetOptions.position.lng}/>*/}
-        {/*-->*/}
         <GoogleMap
           minHeight="400px"
           mapOptions={this.state.mapOptions}
@@ -132,5 +128,5 @@ export class MapAlt extends Component {
 //     mapId: state.app.mapId
 //   };
 // };
-// export default connect(mapStateToProps, {mapMarkerAction})(Map);
+// export default connect(mapStateToProps, {mapMarkerAction})(MapContainer);
 export default MapAlt;

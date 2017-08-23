@@ -1,96 +1,33 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import GoogleApi from "../lib/GoogleApi";
-import {updateAddressResultsAction} from "../actions/addressActionCreators";
-import {centerMapAction} from "../actions/mapActionCreators";
-import Map from "./map/Map";
+import GoogleApi from "../../lib/GoogleApi";
+import {updateAddressResultsAction} from "../../actions/addressActionCreators";
+import {centerMapAction} from "../../actions/mapActionCreators";
+import MapComponent from "../map/MapComponent";
 var rp = require('request-promise');
 
 class AddressGpsRetriever extends Component {
   constructor(props) {
     super(props);
     // this.state = {
-    //   subDir: "geocode/json",
-    //   apiKey: 'AIzaSyDZHZHHITCFz-Xyi0XRIFH1BoAOH7YinPY',
-    //   results: [
-    //     {
-    //       address_components : [
-    //         {
-    //           long_name : "28262",
-    //           short_name : "28262",
-    //           types : [ "postal_code" ]
-    //         },
-    //         {
-    //           long_name : "Charlotte",
-    //           short_name : "Charlotte",
-    //           types : [ "locality", "political" ]
-    //         },
-    //         {
-    //           long_name : "Mecklenburg County",
-    //           short_name : "Mecklenburg County",
-    //           types : [ "administrative_area_level_2", "political" ]
-    //         },
-    //         {
-    //           long_name : "North Carolina",
-    //           short_name : "NC",
-    //           types : [ "administrative_area_level_1", "political" ]
-    //         },
-    //         {
-    //           long_name : "United States",
-    //           short_name : "US",
-    //           types : [ "country", "political" ]
-    //         }
-    //       ],
-    //       formatted_address : "Charlotte, NC 28262, USA",
-    //       geometry : {
-    //         bounds : {
-    //           northeast : {
-    //             lat : 35.377745,
-    //             lng : -80.6889039
-    //           },
-    //           southwest : {
-    //             lat : 35.278478,
-    //             lng : -80.80545499999999
-    //           }
-    //         },
-    //         location : {
-    //           lat : 35.3301529,
-    //           lng : -80.7325287
-    //         },
-    //         location_type : "APPROXIMATE",
-    //         viewport : {
-    //           northeast : {
-    //             lat : 35.377745,
-    //             lng : -80.6889039
-    //           },
-    //           southwest : {
-    //             lat : 35.278478,
-    //             lng : -80.80545499999999
-    //           }
-    //         }
-    //       },
-    //       place_id : "ChIJ8_mKTmkcVIgRNQiqsn6NanU",
-    //       types : [ "postal_code" ]
-    //     }
-    //   ]
+    //   displayAddressResuts: false
     // };
-
     this.displayAddressDetails = this.displayAddressDetails.bind(this);
     this.retrieveMapData = this.retrieveMapData.bind(this);
-
   }
+
   displayAddressDetails() {
     let resultsDiv = document.createElement('div');
-    this.props.results.forEach(function(result, i) {
-      var divResult = document.createElement('div');
+    this.props.results.forEach(function (result, i) {
+      let divResult = document.createElement('div');
       divResult.id = "resultDiv" + i;
       let formatted_address = result.formatted_address;
       let formatterAddressHeader = document.createElement("h5");
-      formatterAddressHeader.innerHTML= "<strong>Formatted Address</strong>:&nbsp;" + formatted_address;
+      formatterAddressHeader.innerHTML = "<strong>Formatted Address</strong>:&nbsp;" + formatted_address;
       divResult.appendChild(formatterAddressHeader);
       let addressComponents = result.address_components;
       divResult.innerHTML += "<h5>Address Details:</h5>";
-      addressComponents.forEach(function(ac, j) {
+      addressComponents.forEach(function (ac, j) {
         let addressSpan = document.createElement('span');
         addressSpan.id = i + "addressSpan" + j;
         let types = ac.types;
@@ -101,8 +38,8 @@ class AddressGpsRetriever extends Component {
         //   row.appendChild(label);
         // }
         let label = document.createElement('label');
-        if(types.length) {
-          if(types.length > 1) {
+        if (types.length) {
+          if (types.length > 1) {
             label.innerHTML = `${types[0].replace(/_/g, ' ')} (${types[1]}):&nbsp;`
           } else {
             label.innerHTML = `${types[0].replace(/_/g, ' ')}:&nbsp;`
@@ -137,31 +74,41 @@ class AddressGpsRetriever extends Component {
 
   retrieveMapData() {
     rp({
-      uri: GoogleApi(this.props.apiKey, null, null, [{address:this.props.address}], this.props.subDir),
+      uri: GoogleApi(this.props.apiKey, null, null, [{address: this.props.address}], this.props.subDir),
       headers: {
         'User-Agent': 'Request-Promise'
       },
       json: true
     }).then((response) => {
       // this.setState({results: response.results});
-      console.dir(response);
+      console.dir("Response\r\n", response);
       this.props.updateAddressResultsAction(response.results);
-      // this.props.centerMapAction(response.results[0].geometry.location);
-    }).catch(error => {alert(error)});
+      this.props.centerMapAction(response.results[0].geometry.location);
+      if (this.props.displayAddressResuts) {
+        this.displayAddressDetails();
+      }
+    }).catch(error => {
+      alert(error)
+    });
   }
 
-  componentDidMount() {
-    this.displayAddressDetails();
-    // this.retrieveMapData();
-  }
-  componentWillMount() {
-    // console.dir(this.refs);
-    this.retrieveMapData();
-  }
+  // componentDidMount() {
+  //   this.retrieveMapData();
+  //   // this.displayAddressDetails();
+  // }
+  //
+  // componentWillMount() {
+  //   // console.dir(this.refs);
+  //   this.retrieveMapData();
+  //   // this.displayAddressDetails();
+  // }
+
   render() {
+
+    // this.displayAddressDetails();
     return (
-      <div id="addressDiv" ref="addressDiv">
-        <Map></Map>
+      <div id = "addressDiv" ref = "addressDiv">
+        <MapComponent></MapComponent>
       </div>
     );
   }

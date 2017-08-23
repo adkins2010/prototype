@@ -3,7 +3,8 @@ import {render} from 'react-dom';
 import {Provider} from 'react-redux'
 import Coordinate from "./Coordinate";
 import configureStore from "./store/configureStore";
-import AddressGpsRetriever from "./components/AddressGpsRetriever";
+import AddressGpsRetriever from "./components/address/AddressGpsRetriever";
+import AddressInputForm from "./components/address/AddressInputForm";
 
 
 // const options = {
@@ -19,11 +20,10 @@ let mapCenterCoordinate = new Coordinate(35.3301529, -80.7325287),
 const store = configureStore();
 render(
   <Provider store={store}>
-    <AddressGpsRetriever/>
+    <AddressInputForm/>
   </Provider>,
   document.getElementById('root')
 );
-
 // const userId = 1;
 //
 // fetch('/v1/example/'+userId, options).then(response => response.json())

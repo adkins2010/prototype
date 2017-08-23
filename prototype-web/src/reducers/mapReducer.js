@@ -7,11 +7,17 @@ const initialState = {
       lat: 25.0112183,
       lng: 121.52067570000001,
     },
-    key: `Taiwan`,
+    key: ``,
     defaultAnimation: 2,
   }],
   apiKey: "AIzaSyDZHZHHITCFz-Xyi0XRIFH1BoAOH7YinPY",
-  map: null
+  map: null,
+  maps: null,
+  mapCenterCoordinate: {
+    lat : 35.3301529,
+    lng : -80.7325287
+  },
+  mapScript: null,
 };
 
 
