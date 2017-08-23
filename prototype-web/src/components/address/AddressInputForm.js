@@ -41,7 +41,7 @@ class AddressInputForm extends Component {
       },
       json: true
     }).then((response) => {
-      console.dir("Response\r\n", response);
+      // console.dir("Response\r\n", response);
       this.props.updateAddressResultsAction(response.results);
       this.props.centerMapAction(response.results[0].geometry.location);
       let addressInput = {
@@ -81,21 +81,18 @@ class AddressInputForm extends Component {
           }
         });
         me.props.addressInputAction(addressInput);
-        me.props.formatAddressAction({formattedAddress: formattedAddress});
-        /**
-         * It doesn't like for me to try to update the state tree with every iteration of the
-         * results array.  I won't see the changes if I try to update from here.  Also
-         */
+        me.props.formatAddressAction(formattedAddress);
+
       });
-      this.props.addressInputAction(addressInput);
-      this.props.formatAddressAction({formattedAddress: formattedAddress});
+      // this.props.addressInputAction(addressInput);
+      // this.props.formatAddressAction({formattedAddress: formattedAddress});
     }).catch(error => {
       // alert(error)
     });
   }
 
   updateAddressLine1(event) {
-    console.log("updateAddressLine1",event);
+    console.log("updateAddressLine1",event.target.value);
     this.props.addressInputAction({
       addressLine1: event.target.value,
       addressLine2: this.props.addressInput.addressLine2,
@@ -117,7 +114,7 @@ class AddressInputForm extends Component {
   }
 
   updateAddressLine2(event) {
-    console.log("updateAddressLine2",event);
+    console.log("updateAddressLine2",event.target.value);
     this.props.addressInputAction({
       addressLine1: this.props.addressInput.addressLine1,
       addressLine2: event.target.value,
@@ -138,7 +135,7 @@ class AddressInputForm extends Component {
   }
 
   updateCity(event) {
-    console.log("updateCity",event);
+    console.log("updateCity",event.target.value);
     this.props.addressInputAction({
       addressLine1: this.props.addressInput.addressLine1,
       addressLine2: this.props.addressInput.addressLine2,
@@ -159,7 +156,7 @@ class AddressInputForm extends Component {
   }
 
   updateState(event) {
-    console.log("updateState",event);
+    console.log("updateState",event.target.value);
     this.props.addressInputAction({
       addressLine1: this.props.addressInput.addressLine1,
       addressLine2: this.props.addressInput.addressLine2,
@@ -180,7 +177,7 @@ class AddressInputForm extends Component {
   }
 
   updatePostalCode(event) {
-    console.log("updatePostalCode",event);
+    console.log("updatePostalCode",event.target.value);
     this.props.addressInputAction({
       addressLine1: this.props.addressInput.addressLine1,
       addressLine2: this.props.addressInput.addressLine2,
@@ -288,8 +285,7 @@ class AddressInputForm extends Component {
               name = "postal-code-input"
               type = "text"
               maxLength = '6'
-              onKeyPress = {this.validate}
-              onKeyUp = {this.retrieveMapData}
+              // onKeyPress = {this.validate}
               onChange = {this.updatePostalCode}
               className = "postal-code-input"
               id = "postal-code-input"
