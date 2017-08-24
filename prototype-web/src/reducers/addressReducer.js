@@ -1,4 +1,4 @@
-import * as addressActionTypes from '../actions/addressActionTypes';
+import * as addressActionTypes from "../actions/addressActionTypes";
 
 const initialState = {
   subDir: "geocode/json",
@@ -8,11 +8,12 @@ const initialState = {
   ],
   formattedAddress: "",
   addressInput: {
-    addressLine1: "8505 IBM Drive",
+    addressLine1: "",
     addressLine2: "",
     city: "",
     state: "",
-    postalCode: ""/*,
+    postalCode: "",
+    country: "USA"/*,
     addressLine1Error: false,
     postalError: false,
     stateError: false,
@@ -36,6 +37,7 @@ const addressReducer = (state = initialState, action) => {
         ...state,
       };
       state.address = action.address;
+      // console.log("Address updated to ", state.address);
       break;
     case addressActionTypes.FORMAT_ADDRESS:
       state = {

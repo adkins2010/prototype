@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import {connect} from "react-redux";
 import GoogleApi from "../../lib/GoogleApi";
 import {updateAddressResultsAction} from "../../actions/addressActionCreators";
@@ -93,13 +93,13 @@ class AddressGpsRetriever extends Component {
   }
 
   // componentDidMount() {
-  //   this.retrieveMapData();
+  //   this.retrieveAddressData();
   //   // this.displayAddressDetails();
   // }
   //
   // componentWillMount() {
   //   // console.dir(this.refs);
-  //   this.retrieveMapData();
+  //   this.retrieveAddressData();
   //   // this.displayAddressDetails();
   // }
 
@@ -108,7 +108,7 @@ class AddressGpsRetriever extends Component {
     // this.displayAddressDetails();
     return (
       <div id = "addressDiv" ref = "addressDiv">
-        <MapComponent></MapComponent>
+        <MapComponent/>
       </div>
     );
   }

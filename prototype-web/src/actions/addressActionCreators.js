@@ -8,6 +8,7 @@ export function updateAddressResultsAction(results) {
 }
 
 export function updateAddressAction(address) {
+  // console.log("updating address ", address);
   return {
     type: addressActionTypes.UPDATE_ADDRESS_DETAILS,
     address: address
