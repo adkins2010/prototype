@@ -14,8 +14,8 @@ import AddressInputForm from "./components/address/AddressInputForm";
 //     }
 // };
 
-let mapCenterCoordinate = new Coordinate(35.3301529, -80.7325287),
-  streetViewCoordinate = new Coordinate(35.3043098, -80.76405469999997),
+let mapCenterCoordinate = new Coordinate({parameters: {lat: 35.3301529, lng: -80.7325287}}),
+  streetViewCoordinate = new Coordinate({parameters: {lat: 35.3043098, lng: -80.76405469999997}}),
   address = "28262";
 const store = configureStore();
 render(
