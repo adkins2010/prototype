@@ -12,8 +12,7 @@ const initialState = {
     addressLine2: "",
     city: "",
     state: "",
-    postalCode: "",
-    country: "USA"/*,
+    postalCode: ""/*,
     addressLine1Error: false,
     postalError: false,
     stateError: false,
@@ -37,13 +36,6 @@ const addressReducer = (state = initialState, action) => {
         ...state,
       };
       state.address = action.address;
-      // console.log("Address updated to ", state.address);
-      break;
-    case addressActionTypes.FORMAT_ADDRESS:
-      state = {
-        ...state,
-      };
-      state.formattedAddress = action.formattedAddress;
       break;
     case addressActionTypes.ADDRESS_INPUT:
       state = {
