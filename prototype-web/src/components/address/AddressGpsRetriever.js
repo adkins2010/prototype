@@ -1,10 +1,9 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import GoogleApi from "../../lib/GoogleApi";
 import {updateAddressResultsAction} from "../../actions/addressActionCreators";
 import {centerMapAction} from "../../actions/mapActionCreators";
-import MapComponent from "../map/MapComponent";
-var rp = require('request-promise');
+import {AddressGpsDetailsRetriever} from "ars-compozed-roadio-common-ui";
+
 
 class AddressGpsRetriever extends Component {
   constructor(props) {
@@ -12,8 +11,14 @@ class AddressGpsRetriever extends Component {
     // this.state = {
     //   displayAddressResuts: false
     // };
+    // this.displayAddressDetails = this.displayAddressDetails.bind(this);
+    this.retrieveAddressData = this.retrieveAddressData.bind(this);
     this.displayAddressDetails = this.displayAddressDetails.bind(this);
-    this.retrieveMapData = this.retrieveMapData.bind(this);
+    this.resultsHandler = (results) => {
+      this.props.updateAddressResultsAction(results);
+      this.props.centerMapAction(results[0].geometry.location);
+      this.displayAddressDetails();
+    }
   }
 
   displayAddressDetails() {
@@ -31,12 +36,6 @@ class AddressGpsRetriever extends Component {
         let addressSpan = document.createElement('span');
         addressSpan.id = i + "addressSpan" + j;
         let types = ac.types;
-        // for (let k = 0; k < types.length; k++) {
-        //   let type = types[k];
-        //   let label = document.createElement('label');
-        //   label.innerHTML=type + "&nbsp;";
-        //   row.appendChild(label);
-        // }
         let label = document.createElement('label');
         if (types.length) {
           if (types.length > 1) {
@@ -66,52 +65,50 @@ class AddressGpsRetriever extends Component {
       divResult.appendChild(geometryDiv);
       resultsDiv.appendChild(divResult);
     });
-    // document.getElementsByTagName("body")[0].appendChild(resultsDiv);
     this.refs.addressDiv.appendChild(resultsDiv);
-    // return div;
-    // document.getElementById("addressDiv").appendChild(resultsDiv);
   }
 
-  retrieveMapData() {
-    rp({
-      uri: GoogleApi(this.props.apiKey, null, null, [{address: this.props.address}], this.props.subDir),
-      headers: {
-        'User-Agent': 'Request-Promise'
-      },
-      json: true
-    }).then((response) => {
-      // this.setState({results: response.results});
-      console.dir("Response\r\n", response);
-      this.props.updateAddressResultsAction(response.results);
-      this.props.centerMapAction(response.results[0].geometry.location);
-      if (this.props.displayAddressResuts) {
-        this.displayAddressDetails();
-      }
-    }).catch(error => {
-      alert(error)
-    });
+
+  retrieveAddressData() {
+    // rp({
+    //   uri: GoogleApi(this.props.apiKey, null, null, [{address: this.props.address}], this.props.subDir),
+    //   headers: {
+    //     'User-Agent': 'Request-Promise'
+    //   },
+    //   json: true
+    // }).then((response) => {
+    //   // this.setState({results: response.results});
+    //   console.log("Response\r\n", response);
+    //   this.props.updateAddressResultsAction(response.results);
+    //   this.props.centerMapAction(response.results[0].geometry.location);
+    //   this.displayAddressDetails();
+    // }).catch(error => {
+    //   alert(error)
+    // });
+    AddressGpsDetailsRetriever(this.props.address, this.props.apiKey, this.props.subDir, this.resultsHandler);
   }
 
-  // componentDidMount() {
-  //   this.retrieveAddressData();
-  //   // this.displayAddressDetails();
-  // }
-  //
-  // componentWillMount() {
-  //   // console.dir(this.refs);
-  //   this.retrieveAddressData();
-  //   // this.displayAddressDetails();
-  // }
+  componentDidMount() {
+    this.retrieveAddressData();
+    // this.displayAddressDetails();
+  }
+
+  componentWillMount() {
+    // console.dir(this.refs);
+    this.retrieveAddressData();
+    // this.displayAddressDetails();
+  }
 
   render() {
 
     // this.displayAddressDetails();
     return (
       <div id = "addressDiv" ref = "addressDiv">
-        <MapComponent/>
+
       </div>
     );
   }
+
 }
 const mapStateToProps = (state) => {
   return {

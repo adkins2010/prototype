@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import { GoogleMap } from 'react-pattern-library';
-import { mapMarkerAction } from "../../actions/mapActionCreators";
-import * as icons from 'react-pattern-library-icons';
-import '../style/Map.css'
+import React, {Component} from "react";
+import {GoogleMap} from "react-pattern-library";
+import {mapMarkerAction} from "../../actions/mapActionCreators";
+import * as icons from "react-pattern-library-icons";
+import "../style/Map.css";
 
 export class MapAlt extends Component {
   constructor(props) {
@@ -17,8 +17,6 @@ export class MapAlt extends Component {
       //somehow, the coordinates need to be updated depending on the user.
       mapOptions: {
         center: {
-          // lat: 35.30636737274465,
-          // lng: -80.76664034949033
           lat: props.mapCenterCoordinate.lat,
           lng: props.mapCenterCoordinate.lng
         },

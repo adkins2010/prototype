@@ -9,9 +9,8 @@ import {
 import {centerMapAction} from "../../actions/mapActionCreators";
 import "../style/Address.css";
 import "../style/Errors.css";
-import GoogleApi from "../../lib/GoogleApi";
-import * as console from "codeceptjs";
-var rp = require('request-promise');
+import {AddressGpsDetailsRetriever} from "ars-compozed-roadio-common-ui";
+
 
 class AddressInputForm extends Component {
   constructor(props) {
@@ -25,42 +24,9 @@ class AddressInputForm extends Component {
     this.validate = this.validate.bind(this);
     this.retrieveAddressData = this.retrieveAddressData.bind(this);
     this.retrieveAddressDataForStreet = this.retrieveAddressDataForStreet.bind(this);
-  }
+    this.resultsHandler = (results, id) => {
 
-  validate(evt) {
-    console.dir("validate", evt);
-    let theEvent = evt || window.event;
-    let key = theEvent.keyCode || theEvent.which;
-    key = String.fromCharCode(key);
-    let regex = /[0-9]|\./;
-    if (!regex.test(key)) {
-      theEvent.returnValue = false;
-      if (theEvent.preventDefault) theEvent.preventDefault();
-    }
-
-  }
-
-  retrieveAddressDataForStreet(event) {
-    console.dir(this.props.address);
-    this.retrieveAddressData(event, this.props.address);
-  }
-
-  retrieveAddressData(event, address) {
-    let id = event.target.id.toString();
-    console.log(id);
-    if (address === undefined || address === null || address === "") {
-      address = this.props.address;
-    }
-    console.log("Searching for address ", address);
-    rp({
-      uri: GoogleApi(this.props.apiKey, null, null, [{address: address}], this.props.subDir),
-      headers: {
-        'User-Agent': 'Request-Promise'
-      },
-      json: true
-    }).then((response) => {
-      console.log("Response\r\n", response);
-      this.props.updateAddressResultsAction(response.results);
+      this.props.updateAddressResultsAction(results);
 
 
       let me = this;
@@ -106,13 +72,100 @@ class AddressInputForm extends Component {
         });
         addressInput.addressLine1 = (id.indexOf("line-1") >= 0 ? addressInput.addressLine1 : streetNo + " " + route);
         me.props.addressInputAction(addressInput);
-
-
       });
+    }
+  }
 
-    }).catch(error => {
-      alert(error)
-    });
+  validate(evt) {
+    console.dir("validate", evt);
+    let theEvent = evt || window.event;
+    let key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode(key);
+    let regex = /[0-9]|\./;
+    if (!regex.test(key)) {
+      theEvent.returnValue = false;
+      if (theEvent.preventDefault) {
+        theEvent.preventDefault();
+      }
+    }
+
+  }
+
+  retrieveAddressDataForStreet(event) {
+    console.dir(this.props.address);
+    this.retrieveAddressData(event, this.props.address);
+  }
+
+  retrieveAddressData(event, address) {
+    let id = event.target.id.toString();
+    AddressGpsDetailsRetriever(address, this.props.apiKey, this.props.subDir, this.resultsHandler, [id]);
+    //
+    // console.log(id);
+    // if (address === undefined || address === null || address === "") {
+    //   address = this.props.address;
+    // }
+    // console.log("Searching for address ", address);
+    // rp({
+    //   uri: GoogleApi(this.props.apiKey, null, null, [{address: address}], this.props.subDir),
+    //   headers: {
+    //     'User-Agent': 'Request-Promise'
+    //   },
+    //   json: true
+    // }).then((response) => {
+    //   console.log("Response\r\n", response);
+    //   this.props.updateAddressResultsAction(response.results);
+    //
+    //
+    //   let me = this;
+    //   let addressInput = {
+    //     addressLine1: me.props.addressInput.addressLine1,
+    //     addressLine2: me.props.addressInput.addressLine2,
+    //     city: me.props.addressInput.city,
+    //     state: me.props.addressInput.state,
+    //     postalCode: me.props.addressInput.postalCode,
+    //     country: me.props.addressInput.country
+    //   };
+    //   this.props.results.forEach(function (result, i) {
+    //     console.log("Result %d: ", i, result);
+    //
+    //     let streetNo = '';
+    //     let route = "";
+    //
+    //     me.props.centerMapAction(result.geometry.location);
+    //     let formattedAddress = result.formatted_address;
+    //     me.props.formatAddressAction(formattedAddress);
+    //     // console.dir(formattedAddress);
+    //
+    //     let addressComponents = result.address_components;
+    //     addressComponents.forEach((ac) => {
+    //       if (ac.types[0] === "postal_code" && id.indexOf("postal") < 0) {
+    //         addressInput.postalCode = ac.long_name;
+    //       }
+    //       if (ac.types[0] === "locality" && id.indexOf("city") < 0) {
+    //         addressInput.city = ac.long_name;
+    //       }
+    //       if (ac.types[0] === "administrative_area_level_1" && id.indexOf("state") < 0) {
+    //         addressInput.state = ac.short_name;
+    //       }
+    //       if (ac.types[0] === "subpremise" && id.indexOf("line-2") < 0) {
+    //         addressInput.addressLine2 = ac.long_name;
+    //       }
+    //       if (ac.types[0] === "street_number") {
+    //         streetNo = ac.long_name;
+    //       }
+    //       if (ac.types[0] === "route") {
+    //         route = ac.long_name;
+    //       }
+    //     });
+    //     addressInput.addressLine1 = (id.indexOf("line-1") >= 0 ? addressInput.addressLine1 : streetNo + " " + route);
+    //     me.props.addressInputAction(addressInput);
+    //
+    //
+    //   });
+    //
+    // }).catch(error => {
+    //   alert(error)
+    // });
   }
 
   updateAddressLine1(event) {

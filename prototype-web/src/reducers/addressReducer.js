@@ -3,7 +3,7 @@ import * as addressActionTypes from "../actions/addressActionTypes";
 const initialState = {
   subDir: "geocode/json",
   apiKey: 'AIzaSyDZHZHHITCFz-Xyi0XRIFH1BoAOH7YinPY',
-  address: "",
+  address: "28262",
   results: [
   ],
   formattedAddress: "",
@@ -14,11 +14,6 @@ const initialState = {
     state: "",
     postalCode: "",
     country: "USA"
-    /*,
-    addressLine1Error: false,
-    postalError: false,
-    stateError: false,
-    cityError: false*/
   }
 };
 
@@ -29,19 +24,19 @@ const addressReducer = (state = initialState, action) => {
   switch (action.type) {
     case addressActionTypes.RETRIEVE_ADDRESS_DETAILS:
       state = {
-        ...state,
+        ...state
       };
       state.results = action.results;
       break;
     case addressActionTypes.UPDATE_ADDRESS_DETAILS:
       state = {
-        ...state,
+        ...state
       };
       state.address = action.address;
       break;
     case addressActionTypes.FORMAT_ADDRESS:
       state = {
-        ...state,
+        ...state
       };
       state.formattedAddress = action.formattedAddress;
       break;
@@ -50,14 +45,6 @@ const addressReducer = (state = initialState, action) => {
         ...state,
         addressInput: action.addressInput
       };
-
-      // if(action.addressInput.postalError) {
-      //   state.addressInput.addressLine1Error = action.addressInput.postalError;
-      // } else if(action.addressInput.addressLine1Error) {
-      //   state.addressInput.addressLine1Error = action.addressInput.addressLine1Error;
-      // } else if(action.addressInput.cityError) {
-      //   state.addressInput.cityError = action.addressInput.cityError;
-      // }
       break;
     default:
       break;
