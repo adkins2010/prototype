@@ -98,7 +98,8 @@ class AddressInputForm extends Component {
 
   retrieveAddressData(event, address) {
     let id = event.target.id.toString();
-    AddressGpsDetailsRetriever(address, this.props.apiKey, this.props.subDir, this.resultsHandler, [id]);
+    // AddressGpsDetailsRetriever(address, this.props.apiKey, this.props.subDir, this.resultsHandler, [id]);
+    AsyncAddressGpsDetailsRetriever(address, this.props.apiKey, this.props.subDir).then(this.resultsHandler(id));
     //
     // console.log(id);
     // if (address === undefined || address === null || address === "") {
