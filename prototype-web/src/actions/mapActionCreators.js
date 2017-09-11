@@ -1,13 +1,13 @@
 import * as mapActionTypes from "./mapActionTypes";
 
-// export function mapMarkerAction (mapOptions, streetOptions) {
-//
-//   return {
-//     type: mapActionTypes.LOAD_MAP,
-//     mapOptions: mapOptions,
-//     streetOptions: streetOptions
-//   }
-// }
+export function mapMarkerAction (mapOptions, streetOptions) {
+
+  return {
+    type: mapActionTypes.LOAD_MAP,
+    mapOptions: mapOptions,
+    streetOptions: streetOptions
+  }
+}
 
 export function loadScriptAction(script) {
   return {

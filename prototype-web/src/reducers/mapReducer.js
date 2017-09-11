@@ -1,5 +1,4 @@
 import * as mapActionTypes from '../actions/mapActionTypes';
-import * as icons from 'react-pattern-library-icons';
 
 const initialState = {
   markers: [{

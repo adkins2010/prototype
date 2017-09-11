@@ -1,4 +1,4 @@
-import {GoogleApi} from "ars-compozed-roadio-common-ui";
+import {GoogleApi} from "../../lib/GoogleApi";
 const rp = require('request-promise');
 
 /**

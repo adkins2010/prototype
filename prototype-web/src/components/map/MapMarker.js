@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import {connect} from "react-redux";
 import { dropMarkerAction } from "../../actions/mapActionCreators";
 
 export class MapMarker extends Component {

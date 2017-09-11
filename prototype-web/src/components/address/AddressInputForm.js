@@ -9,7 +9,8 @@ import {
 import {centerMapAction} from "../../actions/mapActionCreators";
 import "../style/Address.css";
 import "../style/Errors.css";
-import {AddressGpsDetailsRetriever} from "ars-compozed-roadio-common-ui";
+import {AddressGpsDetailsRetriever} from "../../lib/AddressGpsDetailsRetriever";
+import AddressDetailsRenderer from "../../lib/AddressDetailsRenderer";
 
 
 class AddressInputForm extends Component {
@@ -24,9 +25,11 @@ class AddressInputForm extends Component {
     this.validate = this.validate.bind(this);
     this.retrieveAddressData = this.retrieveAddressData.bind(this);
     this.retrieveAddressDataForStreet = this.retrieveAddressDataForStreet.bind(this);
+
     this.resultsHandler = (results, id) => {
 
       this.props.updateAddressResultsAction(results);
+      this.props.centerMapAction(results[0].geometry.location);
 
 
       let me = this;
@@ -73,6 +76,7 @@ class AddressInputForm extends Component {
         addressInput.addressLine1 = (id.indexOf("line-1") >= 0 ? addressInput.addressLine1 : streetNo + " " + route);
         me.props.addressInputAction(addressInput);
       });
+      new AddressDetailsRenderer().displayAddressDetails(this.refs.addressDetailsDiv, results);
     }
   }
 
@@ -98,75 +102,8 @@ class AddressInputForm extends Component {
 
   retrieveAddressData(event, address) {
     let id = event.target.id.toString();
-    // AddressGpsDetailsRetriever(address, this.props.apiKey, this.props.subDir, this.resultsHandler, [id]);
-    AsyncAddressGpsDetailsRetriever(address, this.props.apiKey, this.props.subDir).then(this.resultsHandler(id));
-    //
-    // console.log(id);
-    // if (address === undefined || address === null || address === "") {
-    //   address = this.props.address;
-    // }
-    // console.log("Searching for address ", address);
-    // rp({
-    //   uri: GoogleApi(this.props.apiKey, null, null, [{address: address}], this.props.subDir),
-    //   headers: {
-    //     'User-Agent': 'Request-Promise'
-    //   },
-    //   json: true
-    // }).then((response) => {
-    //   console.log("Response\r\n", response);
-    //   this.props.updateAddressResultsAction(response.results);
-    //
-    //
-    //   let me = this;
-    //   let addressInput = {
-    //     addressLine1: me.props.addressInput.addressLine1,
-    //     addressLine2: me.props.addressInput.addressLine2,
-    //     city: me.props.addressInput.city,
-    //     state: me.props.addressInput.state,
-    //     postalCode: me.props.addressInput.postalCode,
-    //     country: me.props.addressInput.country
-    //   };
-    //   this.props.results.forEach(function (result, i) {
-    //     console.log("Result %d: ", i, result);
-    //
-    //     let streetNo = '';
-    //     let route = "";
-    //
-    //     me.props.centerMapAction(result.geometry.location);
-    //     let formattedAddress = result.formatted_address;
-    //     me.props.formatAddressAction(formattedAddress);
-    //     // console.dir(formattedAddress);
-    //
-    //     let addressComponents = result.address_components;
-    //     addressComponents.forEach((ac) => {
-    //       if (ac.types[0] === "postal_code" && id.indexOf("postal") < 0) {
-    //         addressInput.postalCode = ac.long_name;
-    //       }
-    //       if (ac.types[0] === "locality" && id.indexOf("city") < 0) {
-    //         addressInput.city = ac.long_name;
-    //       }
-    //       if (ac.types[0] === "administrative_area_level_1" && id.indexOf("state") < 0) {
-    //         addressInput.state = ac.short_name;
-    //       }
-    //       if (ac.types[0] === "subpremise" && id.indexOf("line-2") < 0) {
-    //         addressInput.addressLine2 = ac.long_name;
-    //       }
-    //       if (ac.types[0] === "street_number") {
-    //         streetNo = ac.long_name;
-    //       }
-    //       if (ac.types[0] === "route") {
-    //         route = ac.long_name;
-    //       }
-    //     });
-    //     addressInput.addressLine1 = (id.indexOf("line-1") >= 0 ? addressInput.addressLine1 : streetNo + " " + route);
-    //     me.props.addressInputAction(addressInput);
-    //
-    //
-    //   });
-    //
-    // }).catch(error => {
-    //   alert(error)
-    // });
+    AddressGpsDetailsRetriever(address, this.props.apiKey, this.props.subDir, this.resultsHandler, [id]);
+    // AsyncAddressGpsDetailsRetriever(address, this.props.apiKey, this.props.subDir).then(this.resultsHandler(id));
   }
 
   updateAddressLine1(event) {
@@ -287,19 +224,9 @@ class AddressInputForm extends Component {
     }
   }
 
-  get formattedAddressInnerHtml() {
-    if(this.props.formattedAddress) {
-      return <strong>Formatted Address</strong> `${this.props.formattedAddress}`
-    }
-    else {
-      return <span onLoad={this.loadMap}>Loading <img src = "/images/loading.gif" style={{"width": "15px", "verticalAlign": "bottom"}}/></span>
-    }
-  }
-
   render() {
       return (
         <div className = "container-fluid">
-
           <div id = "addressLine1Row" className = "row">
             <div className = "col-sm-4">
               <label className = "address-form-label" id = "address-line-label">Address Line 1</label>
@@ -321,7 +248,6 @@ class AddressInputForm extends Component {
                                                                                                      be empty.</label>
             </div>
           </div>
-
           <div id = "addressLine2Row" className = "row">
             <div className = "col-sm-4">
               <label className = "address-form-label" id = "address-line-label">Address Line 2</label>
@@ -374,7 +300,6 @@ class AddressInputForm extends Component {
                                                                                               empty.</label>
             </div>
           </div>
-
           <div id = "zipRow" className = "row">
             <div className = "col-xs-4">
               <label className = "postal-code-label" id = "postal-code-label">Zip (Postal) Code:</label>
@@ -397,8 +322,8 @@ class AddressInputForm extends Component {
                                                                                                empty.</label>
             </div>
           </div>
-          <div id = "formatted-address-div" ref = "formattedAddressDiv" className = "formatted-address-div">
-            {/*{this.formattedAddressInnerHtml}*/}
+          <div id = "address-details-div" ref = "addressDetailsDiv" className = "address-details-div">
+
           </div>
         </div>
       );

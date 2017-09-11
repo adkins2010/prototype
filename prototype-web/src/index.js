@@ -24,29 +24,3 @@ render(
   </Provider>,
   document.getElementById('root')
 );
-// const userId = 1;
-//
-// fetch('/v1/example/'+userId, options).then(response => response.json())
-//     .then(userInfo => {
-//
-//         const store = createStore(reducer, {
-//             app: {
-//                 value: userInfo.generatedID || 0,
-//                 text: userInfo.example || "Backend didn't give me anything",
-//                 showLogo: true
-//             }
-//         });
-//
-//         const ConnectedApp = connect(
-//             mapStateToProps,
-//             mapDispatchToProps
-//         )(App);
-//
-//         render(
-//             <Provider store={store}>
-//                 <ConnectedApp />
-//             </Provider>,
-//             document.getElementById('root')
-//         );
-//     });
-

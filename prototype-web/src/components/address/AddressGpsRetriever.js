@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {connect} from "react-redux";
 import {updateAddressResultsAction} from "../../actions/addressActionCreators";
 import {centerMapAction} from "../../actions/mapActionCreators";
-import {AddressGpsDetailsRetriever} from "ars-compozed-roadio-common-ui";
+import {AddressGpsDetailsRetriever} from "../../lib/AddressGpsDetailsRetriever";
 
 
 class AddressGpsRetriever extends Component {

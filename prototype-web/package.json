@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "private": false,
   "dependencies": {
-    "ars-compozed-roadio-common-ui": "file:../../ars-compozed-roadio-common-ui/ars-compozed-roadio-common-ui-0.0.0.tgz",
     "axios": "^0.15.3",
     "babel-polyfill": "^6.26.0",
     "google-maps-react": "^1.1.0",
@@ -12,8 +11,6 @@
     "react": "^15.6.1",
     "react-autocomplete": "^1.7.1",
     "react-dom": "^15.6.1",
-    "react-google-maps": "^7.2.0",
-    "react-pattern-library-icons": "^1.8.4",
     "react-redux": "^5.0.6",
     "redux": "^3.5.2",
     "redux-form": "^7.0.3",
@@ -39,7 +36,6 @@
     "react-addons-shallow-compare": "~15.6.0",
     "react-addons-test-utils": "~15.5.1",
     "react-hot-loader": "~3.0.0-beta.7",
-    "react-pattern-library": "^1.8.4",
     "react-scripts": "^1.0.12",
     "react-scrollspy": "^3.3.3",
     "react-test-renderer": "~15.6.1",
@@ -65,6 +61,6 @@
   },
   "author": {
     "name": "Michael Michinobu Adkins",
-    "url": "https://github.allstate.com/madkk"
+    "url": "https://github.com/adkins2010"
   }
 }
