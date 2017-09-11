@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {GoogleMap} from "react-pattern-library";
 import {connect} from "react-redux";
 import {
   addressInputAction,
@@ -6,16 +7,18 @@ import {
   updateAddressAction,
   updateAddressResultsAction
 } from "../../actions/addressActionCreators";
-import {centerMapAction} from "../../actions/mapActionCreators";
+import {centerMapAction, viewportMapAction} from "../../actions/mapActionCreators";
 import "../style/Address.css";
 import "../style/Errors.css";
 import {AddressGpsDetailsRetriever} from "../../lib/AddressGpsDetailsRetriever";
 import AddressDetailsRenderer from "../../lib/AddressDetailsRenderer";
+import CompoZedMap from "../map/CompoZedMap";
 
 
 class AddressInputForm extends Component {
   constructor(props) {
     super(props);
+    let map = require("../map/CompoZedMap");
 
     this.updateAddressLine1 = this.updateAddressLine1.bind(this);
     this.updateAddressLine2 = this.updateAddressLine2.bind(this);
@@ -25,6 +28,7 @@ class AddressInputForm extends Component {
     this.validate = this.validate.bind(this);
     this.retrieveAddressData = this.retrieveAddressData.bind(this);
     this.retrieveAddressDataForStreet = this.retrieveAddressDataForStreet.bind(this);
+    this.renderMap = this.renderMap.bind(this);
 
     this.resultsHandler = (results, id) => {
 
@@ -75,8 +79,16 @@ class AddressInputForm extends Component {
         });
         addressInput.addressLine1 = (id.indexOf("line-1") >= 0 ? addressInput.addressLine1 : streetNo + " " + route);
         me.props.addressInputAction(addressInput);
+        if (result.geometry.viewport) {
+          // alert("There should be a street view.");
+          viewportMapAction(true, result.geometry.viewport);
+        }
+        else {
+          viewportMapAction(false, null);
+        }
       });
       new AddressDetailsRenderer().displayAddressDetails(this.refs.addressDetailsDiv, results);
+
     }
   }
 
@@ -193,9 +205,35 @@ class AddressInputForm extends Component {
     });
     this.props.updateAddressAction(address);
     if (event.target.value.length >= 2) {
-      if(this.props.addressInput.postalCode.trim().length >= 0) {
+      if (this.props.addressInput.postalCode.trim().length >= 0) {
         this.retrieveAddressData(event, address);
       }
+    }
+  }
+
+  renderMap = () => {
+    // alert("Render");
+    console.dir(this.props.mapCenterCoordinate);
+    if(this.props.streetViewControl) {
+      return (
+        <div id="mapDiv">
+          <GoogleMap
+            minHeight="400px"
+            mapOptions={this.props.mapOptions}
+            streetOptions={this.props.streetOptions}
+
+          />
+        </div>
+      );
+    } else {
+      return (
+        <div id="mapDiv">
+          <GoogleMap
+            minHeight="400px"
+            mapOptions={this.props.mapOptions}
+          />
+        </div>
+      );
     }
   }
 
@@ -225,108 +263,112 @@ class AddressInputForm extends Component {
   }
 
   render() {
-      return (
-        <div className = "container-fluid">
-          <div id = "addressLine1Row" className = "row">
-            <div className = "col-sm-4">
-              <label className = "address-form-label" id = "address-line-label">Address Line 1</label>
-            </div>
-            <div className = "col-sm-8">
-              <input
-                type = "text"
-                className = "address-form-input"
-                id = "address-line-1-input"
-                onChange = {this.updateAddressLine1}
-                onBlur = {this.retrieveAddressDataForStreet}
-                value = {this.props.addressInput.addressLine1}
-              />
-              <label
-                className = {"error-description-label"}
-                id = "address-line-error-label"
-                style = {{display: (this.props.addressInput.addressLine1Error ? " block" : "none")}}>Street Address
-                                                                                                     cannot
-                                                                                                     be empty.</label>
-            </div>
-          </div>
-          <div id = "addressLine2Row" className = "row">
-            <div className = "col-sm-4">
-              <label className = "address-form-label" id = "address-line-label">Address Line 2</label>
-            </div>
-            <div className = "col-sm-8">
-              <input
-                type = "text"
-                className = "address-form-input"
-                id = "address-line-2-input"
-                onChange = {this.updateAddressLine2}
-                value = {this.props.addressInput.addressLine2}
-              />
-            </div>
-          </div>
-          <div id = "cityRow" className = "row">
-            <div className = "col-sm-4">
-              <label className = "address-form-label" id = "city-label">City</label>
-            </div>
-            <div className = "col-sm-8">
-              <input
-                type = "text"
-                className = "address-form-input"
-                id = "city-input"
-                onChange = {this.updateCity}
-                // onBlur = {this.retrieveAddressData}
-                value = {this.props.addressInput.city}/>
-              <label
-                className = {"error-description-label" + (this.props.addressInput.cityError ? " error-display" : "")}
-                id = "city-error-label"
-                style = {{display: (this.props.addressInput.cityError ? " block" : "none")}}>City cannot be
-                                                                                             empty.</label>
-            </div>
-          </div>
 
-          <div id = "stateRow" className = "row">
-            <div className = "col-sm-4">
-              <label className = "address-form-label" id = "state-label">State</label>
-            </div>
-            <div className = "col-sm-8">
-              <input
-                type = "text"
-                className = "address-form-input"
-                onChange = {this.updateState}
-                // onBlur = {this.retrieveAddressData}
-                value = {this.props.addressInput.state}/>
-              <label
-                className = {"error-description-label" + (this.props.addressInput.stateError ? " error-display" : "")}
-                id = "state-error-label"
-                style = {{display: (this.props.addressInput.stateError ? " block" : "none")}}>State cannot be
-                                                                                              empty.</label>
-            </div>
+    return (
+      <div className = "container-fluid">
+        <div id = "addressLine1Row" className = "row">
+          <div className = "col-sm-4">
+            <label className = "address-form-label" id = "address-line-label">Address Line 1</label>
           </div>
-          <div id = "zipRow" className = "row">
-            <div className = "col-xs-4">
-              <label className = "postal-code-label" id = "postal-code-label">Zip (Postal) Code:</label>
-            </div>
-            <div className = "col-xs-8">
-              <input
-                name = "postal-code-input"
-                type = "text"
-                maxLength = '6'
-                // onKeyPress = {this.validate}
-                onChange = {this.updatePostalCode}
-                className = "postal-code-input"
-                id = "postal-code-input"
-                value = {this.props.addressInput.postalCode}
-              />
-              <label
-                className = {"error-description-label" + (this.props.addressInput.postalError ? " error-display" : "")}
-                id = "postal-code-error-label"
-                style = {{display: (this.props.addressInput.postalError ? " block" : "none")}}>Zip Code cannot be
-                                                                                               empty.</label>
-            </div>
-          </div>
-          <div id = "address-details-div" ref = "addressDetailsDiv" className = "address-details-div">
-
+          <div className = "col-sm-8">
+            <input
+              type = "text"
+              className = "address-form-input"
+              id = "address-line-1-input"
+              onChange = {this.updateAddressLine1}
+              onBlur = {this.retrieveAddressDataForStreet}
+              value = {this.props.addressInput.addressLine1}
+            />
+            <label
+              className = {"error-description-label"}
+              id = "address-line-error-label"
+              style = {{display: (this.props.addressInput.addressLine1Error ? " block" : "none")}}>Street Address
+                                                                                                   cannot
+                                                                                                   be empty.</label>
           </div>
         </div>
-      );
+        <div id = "addressLine2Row" className = "row">
+          <div className = "col-sm-4">
+            <label className = "address-form-label" id = "address-line-label">Address Line 2</label>
+          </div>
+          <div className = "col-sm-8">
+            <input
+              type = "text"
+              className = "address-form-input"
+              id = "address-line-2-input"
+              onChange = {this.updateAddressLine2}
+              value = {this.props.addressInput.addressLine2}
+            />
+          </div>
+        </div>
+        <div id = "cityRow" className = "row">
+          <div className = "col-sm-4">
+            <label className = "address-form-label" id = "city-label">City</label>
+          </div>
+          <div className = "col-sm-8">
+            <input
+              type = "text"
+              className = "address-form-input"
+              id = "city-input"
+              onChange = {this.updateCity}
+              // onBlur = {this.retrieveAddressData}
+              value = {this.props.addressInput.city}/>
+            <label
+              className = {"error-description-label" + (this.props.addressInput.cityError ? " error-display" : "")}
+              id = "city-error-label"
+              style = {{display: (this.props.addressInput.cityError ? " block" : "none")}}>City cannot be
+                                                                                           empty.</label>
+          </div>
+        </div>
+
+        <div id = "stateRow" className = "row">
+          <div className = "col-sm-4">
+            <label className = "address-form-label" id = "state-label">State</label>
+          </div>
+          <div className = "col-sm-8">
+            <input
+              type = "text"
+              className = "address-form-input"
+              onChange = {this.updateState}
+              // onBlur = {this.retrieveAddressData}
+              value = {this.props.addressInput.state}/>
+            <label
+              className = {"error-description-label" + (this.props.addressInput.stateError ? " error-display" : "")}
+              id = "state-error-label"
+              style = {{display: (this.props.addressInput.stateError ? " block" : "none")}}>State cannot be
+                                                                                            empty.</label>
+          </div>
+        </div>
+        <div id = "zipRow" className = "row">
+          <div className = "col-xs-4">
+            <label className = "postal-code-label" id = "postal-code-label">Zip (Postal) Code:</label>
+          </div>
+          <div className = "col-xs-8">
+            <input
+              name = "postal-code-input"
+              type = "text"
+              maxLength = '6'
+              // onKeyPress = {this.validate}
+              onChange = {this.updatePostalCode}
+              className = "postal-code-input"
+              id = "postal-code-input"
+              value = {this.props.addressInput.postalCode}
+            />
+            <label
+              className = {"error-description-label" + (this.props.addressInput.postalError ? " error-display" : "")}
+              id = "postal-code-error-label"
+              style = {{display: (this.props.addressInput.postalError ? " block" : "none")}}>Zip Code cannot be
+                                                                                             empty.</label>
+          </div>
+        </div>
+        <div id="mapContainerDiv">
+          {this.renderMap()}
+        </div>
+        <div id = "address-details-div" ref = "addressDetailsDiv" className = "address-details-div">
+
+        </div>
+      </div>
+    );
   }
 }
 const mapStateToProps = (state) => {
@@ -337,6 +379,9 @@ const mapStateToProps = (state) => {
     results: state.addressReducer.results,
     mapCenterCoordinate: state.mapReducer.mapCenterCoordinate,
     addressInput: state.addressReducer.addressInput,
+    mapOptions: state.mapReducer.mapOptions,
+    streetOptions: state.mapReducer.streetOptions,
+    streetViewControl: state.mapReducer.streetViewControl,
     formattedAddress: state.addressReducer.formattedAddress
   };
 };
@@ -345,5 +390,6 @@ export default connect(mapStateToProps, {
   updateAddressAction,
   updateAddressResultsAction,
   formatAddressAction,
-  centerMapAction
+  centerMapAction,
+  viewportMapAction
 })(AddressInputForm);

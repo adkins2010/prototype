@@ -32,6 +32,28 @@ export function centerMapAction(mapCenterCoordinate) {
   }
 }
 
+export function viewportMapAction(streetViewControl, viewportCoordinate) {
+  return {
+    type: mapActionTypes.MAP_VIEWPORT,
+    streetViewControl: streetViewControl,
+    viewportCoordinate: viewportCoordinate
+  }
+}
+
+export function cycleIconAction(customIconsArrIndex) {
+  return {
+    type: mapActionTypes.CYCLE_ICON,
+    customIconsArrIndex: customIconsArrIndex
+  }
+}
+
+export function cycleColorAction(fillColorArrIndex) {
+  return {
+    type: mapActionTypes.CYCLE_COLOR,
+    fillColorArrIndex: fillColorArrIndex
+  }
+}
+
 export function setMarkersAction(markers) {
   return {
     type: mapActionTypes.SET_MARKERS,

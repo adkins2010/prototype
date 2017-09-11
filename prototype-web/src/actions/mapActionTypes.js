@@ -3,3 +3,6 @@ export const LOAD_MAP = "LOAD_MAP";
 export const INIT_MAP = "INIT_MAP";
 export const LOAD_SCRIPT = "LOAD_SCRIPT";
 export const SET_MARKERS = "SET_MARKERS";
+export const MAP_VIEWPORT = "MAP_VIEWPORT";
+export const CYCLE_ICON = "CYCLE_ICON";
+export const CYCLE_COLOR = "CYCLE_COLOR";

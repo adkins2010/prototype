@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {updateAddressResultsAction} from "../../actions/addressActionCreators";
-import {centerMapAction} from "../../actions/mapActionCreators";
+import {centerMapAction, viewportMapAction} from "../../actions/mapActionCreators";
 import {AddressGpsDetailsRetriever} from "../../lib/AddressGpsDetailsRetriever";
 
 
@@ -18,6 +18,12 @@ class AddressGpsRetriever extends Component {
       this.props.updateAddressResultsAction(results);
       this.props.centerMapAction(results[0].geometry.location);
       this.displayAddressDetails();
+      if(results[0].geometry.viewport) {
+        viewportMapAction(true, results[0].geometry.viewport);
+      }
+      else {
+        viewportMapAction(false, null);
+      }
     }
   }
 

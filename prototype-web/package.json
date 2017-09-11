@@ -16,7 +16,10 @@
     "redux-form": "^7.0.3",
     "redux-saga": "^0.12.1",
     "request-promise": "^4.2.1",
-    "url-search-params": "^0.9.0"
+    "url-search-params": "^0.9.0",
+    "react-pattern-library": "latest",
+    "react-pattern-library-icons": "latest",
+    "react-google-maps": "latest"
   },
   "devDependencies": {
     "axios-mock-adapter": "~1.9.0",

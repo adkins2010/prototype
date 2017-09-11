@@ -3,6 +3,7 @@ export default class AddressDetailsRenderer {
     this.displayAddressDetails = this.displayAddressDetails.bind(this);
   }
   displayAddressDetails(addressDetailsDiv, results = []) {
+    addressDetailsDiv.innerHTML = "";
     let resultsDiv = document.createElement('div');
     results.forEach(function (result, i) {
       let divResult = document.createElement('div');
@@ -48,7 +49,7 @@ export default class AddressDetailsRenderer {
       if(geometry.viewport) {
         let viewportSpan = document.createElement('span');
         viewportSpan.innerHTML += `<label>NorthEast Viewport (lat, long):</label>&nbsp;<input disabled value=${geometry.viewport.northeast.lat} />,<input disabled value=${geometry.viewport.northeast.lng} /><br/>`;
-        viewportSpan.innerHTML += `<label>SouthWest Boundary (lat, long):</label>&nbsp;<input disabled value=${geometry.bounds.southwest.lat} />,<input disabled value=${geometry.bounds.southwest.lng} /><br/>`;
+        viewportSpan.innerHTML += `<label>SouthWest Viewport (lat, long):</label>&nbsp;<input disabled value=${geometry.viewport.southwest.lat} />,<input disabled value=${geometry.viewport.southwest.lng} /><br/>`;
         viewportSpan.innerHTML += `<label>Location (lat, long):</label>&nbsp;<input disabled value=${geometry.location.lat} />,<input disabled value=${geometry.location.lng} /><br/>`;
         geometryDiv.appendChild(viewportSpan);
       }
