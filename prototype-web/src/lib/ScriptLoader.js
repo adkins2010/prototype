@@ -24,7 +24,7 @@ export const ScriptLoader = function (scriptSrc) {
 
   return new Promise(function (resolve, reject) {
     var script = document.createElement("script"),
-      body = document.getElementsByTagName("body")[0],
+      head = document.getElementsByTagName("head")[0],
       success = false,
       error = false;
 
@@ -43,7 +43,7 @@ export const ScriptLoader = function (scriptSrc) {
           reject(this);
         }
       };
-      body.appendChild(script);
+      head.appendChild(script);
   });
 }
 

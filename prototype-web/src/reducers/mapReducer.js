@@ -48,9 +48,16 @@ const mapReducer = (state = initialState, action) => {
   switch (action.type) {
     case mapActionTypes.LOAD_MAP:
       state = {
-        ...state,
-        map: action.map
+        ...state
       };
+      state.map = action.map;
+      state.maps = action.maps;
+      break;
+    case mapActionTypes.LOAD_SCRIPT:
+      state = {
+        ...state
+      };
+      state.mapScript = action.mapScript;
       break;
     case mapActionTypes.SET_MARKERS:
       state = {

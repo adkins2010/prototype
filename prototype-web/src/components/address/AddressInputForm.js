@@ -7,13 +7,13 @@ import {
   updateAddressAction,
   updateAddressResultsAction
 } from "../../actions/addressActionCreators";
-import {centerMapAction, viewportMapAction} from "../../actions/mapActionCreators";
+import {centerMapAction, loadMapAction, viewportMapAction} from "../../actions/mapActionCreators";
 import "../style/Address.css";
 import "../style/Errors.css";
 import {AddressGpsDetailsRetriever} from "../../lib/AddressGpsDetailsRetriever";
 import AddressDetailsRenderer from "../../lib/AddressDetailsRenderer";
 import CompoZedMap from "../map/CompoZedMap";
-
+import * as ReactDOM from "react-dom";
 
 class AddressInputForm extends Component {
   constructor(props) {
@@ -29,6 +29,7 @@ class AddressInputForm extends Component {
     this.retrieveAddressData = this.retrieveAddressData.bind(this);
     this.retrieveAddressDataForStreet = this.retrieveAddressDataForStreet.bind(this);
     this.renderMap = this.renderMap.bind(this);
+    this.initMap = this.initMap.bind(this);
 
     this.resultsHandler = (results, id) => {
 
@@ -81,10 +82,10 @@ class AddressInputForm extends Component {
         me.props.addressInputAction(addressInput);
         if (result.geometry.viewport) {
           // alert("There should be a street view.");
-          viewportMapAction(true, result.geometry.viewport);
+          me.props.viewportMapAction(true, result.geometry.viewport);
         }
         else {
-          viewportMapAction(false, null);
+          me.props.viewportMapAction(false, null);
         }
       });
       new AddressDetailsRenderer().displayAddressDetails(this.refs.addressDetailsDiv, results);
@@ -211,9 +212,40 @@ class AddressInputForm extends Component {
     }
   }
 
+  initMap() {
+    let mapRef = this.refs.mapContainerDiv;
+    let node = ReactDOM.findDOMNode(mapRef);
+    // eslint-disable-next-line no-undef
+    var map = new google.maps.Map(node, this.props.mapOptions);
+    // eslint-disable-next-line no-undef
+    var marker = new google.maps.Marker({
+      position: this.props.mapCenterCoordinate,
+      map: map,
+    });
+    // eslint-disable-next-line no-undef
+    this.props.loadMapAction(map, google.maps);
+  }
+
+  dropMapMarker = (map) => {
+    let marker = {
+      position: {
+        lat: this.props.mapCenterCoordinate.lat,
+        lng: this.props.mapCenterCoordinate.lng
+      },
+      map: map,
+      title: "Marker",
+      icon: {
+        fillColor: "#254B6E",
+        anchor: new this.props.maps.Point(0,0),
+        strokeWeight: 0,
+        scale: .6
+      }
+    };
+    return new this.props.maps.Marker(marker);
+  };
+
   renderMap = () => {
     // alert("Render");
-    console.dir(this.props.mapCenterCoordinate);
     if(this.props.streetViewControl) {
       return (
         <div id="mapDiv">
@@ -221,7 +253,6 @@ class AddressInputForm extends Component {
             minHeight="400px"
             mapOptions={this.props.mapOptions}
             streetOptions={this.props.streetOptions}
-
           />
         </div>
       );
@@ -262,8 +293,16 @@ class AddressInputForm extends Component {
     }
   }
 
-  render() {
+  componentDidMount() {
+    this.initMap();
+    // eslint-disable-next-line no-undef
+    google.maps.event.addDomListener(window, 'load', this.initMap);
+  }
 
+  render() {
+    // eslint-disable-next-line no-undef
+    google.maps.event.addDomListener(window, 'load', this.initMap);
+    // this.initMap();
     return (
       <div className = "container-fluid">
         <div id = "addressLine1Row" className = "row">
@@ -361,8 +400,11 @@ class AddressInputForm extends Component {
                                                                                              empty.</label>
           </div>
         </div>
-        <div id="mapContainerDiv">
-          {this.renderMap()}
+        <div id="mapContainerDiv" ref = "mapContainerDiv" style={{height: "100%",
+          width: "100%",
+          margin: "0px",
+          padding: "0px"}}>
+          {/*<CompoZedMap/>*/}
         </div>
         <div id = "address-details-div" ref = "addressDetailsDiv" className = "address-details-div">
 
@@ -391,5 +433,6 @@ export default connect(mapStateToProps, {
   updateAddressResultsAction,
   formatAddressAction,
   centerMapAction,
-  viewportMapAction
+  viewportMapAction,
+  loadMapAction
 })(AddressInputForm);

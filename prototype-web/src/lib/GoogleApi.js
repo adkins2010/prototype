@@ -29,9 +29,11 @@ export const GoogleApi = function(apiKey, libraries, googleVersion, otherParams 
         })
       });
     }
-    let paramStr = Object.keys(params).filter(index => !!params[index]).map((key) => {
-      return `${key}=${params[key]}`
-    }).join('&');
+
+    let paramStr = "";
+    Object.keys(params).forEach((key) => {
+      paramStr += "&" + key +"=" + params[key];
+    });
     let callback = "callback";
     return `${GOOGLE_API_URL}${subDir}?${paramStr}`;
   };
