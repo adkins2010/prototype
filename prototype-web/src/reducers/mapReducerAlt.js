@@ -26,7 +26,7 @@ const mapReducerAlt = (state = initialState, action) => {
       };
       state.mapScript = action.mapScript;
       break;
-    case mapActionTypes.INIT_MAP:
+    case mapActionTypes.MAP_CENTER:
       state = {
         ...state
       };

@@ -27,7 +27,7 @@ export function loadMapAction(map,maps) {
 export function centerMapAction(mapCenterCoordinate) {
 
   return {
-    type: mapActionTypes.INIT_MAP,
+    type: mapActionTypes.MAP_CENTER,
     mapCenterCoordinate: mapCenterCoordinate
   }
 }

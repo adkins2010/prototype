@@ -1,8 +1,8 @@
 package com.allstate.ars.compozed.roadio.domain.beans;
 
-import javax.faces.bean.ManagedBean;
+//import javax.faces.bean.ManagedBean;
 
-@ManagedBean(name = "locationBean", eager = true)
+//@ManagedBean(name = "locationBean", eager = true)
 public class LocationManagedBean {
     Double latitude = 35.30636737274465;
     Double longitude = -80.76664034949033;

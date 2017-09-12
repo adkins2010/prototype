@@ -78,10 +78,10 @@ class MapContainer extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    apiKey: state.mapReducerAlt1.apiKey,
-    map: state.mapReducerAlt1.map,
-    markers: state.mapReducerAlt1.markers,
-    mapCenterCoordinate: state.mapReducerAlt1.mapCenterCoordinate
+    apiKey: state.mapReducer.apiKey,
+    map: state.mapReducer.map,
+    markers: state.mapReducer.markers,
+    mapCenterCoordinate: state.mapReducer.mapCenterCoordinate
   };
 };
 export default connect(mapStateToProps, {loadMapAction, centerMapAction, setMarkersAction})(MapContainer);

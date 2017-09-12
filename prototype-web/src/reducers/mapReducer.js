@@ -1,5 +1,6 @@
 import * as mapActionTypes from '../actions/mapActionTypes';
 import * as icons from "react-pattern-library-icons";
+import $ from "webdriverio/lib/commands/$";
 
 const initialState = {
   markers: [{
@@ -78,9 +79,20 @@ const mapReducer = (state = initialState, action) => {
           scrollwheel: true
         }
         state.streetOptions = streetOptions;
+
+      } else {
+        state.streetOptions = null;
       }
       // state.viewportCoordinate = action.viewportCoordinate;
       state.streetViewControl = action.streetViewControl;
+      break;
+    case mapActionTypes.MAP_CENTER:
+      state = {
+        ...state
+      };
+      state.mapCenterCoordinate = action.mapCenterCoordinate;
+      // eslint-disable-next-line no-undef
+      state.map.panTo(new google.maps.LatLng(state.mapCenterCoordinate.lat, state.mapCenterCoordinate.lng));
       break;
     case mapActionTypes.CYCLE_ICON:
       state = {

@@ -1,2 +1,2 @@
-include 'roadio-template-api'
-include 'roadio-template-web'
+include 'prototype-service'
+include 'prototype-web'

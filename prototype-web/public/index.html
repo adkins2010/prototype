@@ -22,6 +22,8 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <style>
+      html,
+      body,
       #mapContainerDiv {
         height: 100%;
         width: 100%;
@@ -30,7 +32,7 @@
       }
 
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZHZHHITCFz-Xyi0XRIFH1BoAOH7YinPY"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZHZHHITCFz-Xyi0XRIFH1BoAOH7YinPY&libraries=places"></script>
   </head>
   <body>
     <noscript>
@@ -47,29 +49,29 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-      <!--<script>-->
+    <!--<script>-->
       <!--var mapDiv = document.getElementById("root");-->
 
       <!--var map = new google.maps.Map(mapDiv, {-->
-      <!--center: {-->
-      <!--lat : 35.3301529,-->
-      <!--lng : -80.7325287-->
-      <!--},-->
-      <!--zoom: 8-->
+        <!--center: {-->
+          <!--lat: 35.3301529,-->
+          <!--lng: -80.7325287-->
+        <!--},-->
+        <!--zoom: 8-->
       <!--});-->
       <!--var marker = new google.maps.Marker({-->
-      <!--position: {-->
-      <!--lat : 35.3301529,-->
-      <!--lng : -80.7325287-->
-      <!--},-->
-      <!--icon: {-->
-      <!--fillColor: "#c682be",-->
-      <!--anchor: new google.maps.Point(0,0),-->
-      <!--strokeWeight: 0,-->
-      <!--scale: .6-->
-      <!--}-->
+        <!--position: {-->
+          <!--lat: 35.3301529,-->
+          <!--lng: -80.7325287-->
+        <!--},-->
+        <!--icon: {-->
+          <!--fillColor: "#c682be",-->
+          <!--anchor: new google.maps.Point(0, 0),-->
+          <!--strokeWeight: 0,-->
+          <!--scale: .6-->
+        <!--}-->
       <!--});-->
       <!--marker.setMap(map);-->
-      <!--</script>-->
+    <!--</script>-->
   </body>
 </html>

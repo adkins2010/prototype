@@ -14,6 +14,7 @@ import {AddressGpsDetailsRetriever} from "../../lib/AddressGpsDetailsRetriever";
 import AddressDetailsRenderer from "../../lib/AddressDetailsRenderer";
 import CompoZedMap from "../map/CompoZedMap";
 import * as ReactDOM from "react-dom";
+import MapContainer from "../../containers/MapContainer";
 
 class AddressInputForm extends Component {
   constructor(props) {
@@ -29,7 +30,8 @@ class AddressInputForm extends Component {
     this.retrieveAddressData = this.retrieveAddressData.bind(this);
     this.retrieveAddressDataForStreet = this.retrieveAddressDataForStreet.bind(this);
     this.renderMap = this.renderMap.bind(this);
-    this.initMap = this.initMap.bind(this);
+    // this.initMap = this.initMap.bind(this);
+    this.loadMap = this.loadMap.bind(this);
 
     this.resultsHandler = (results, id) => {
 
@@ -89,8 +91,29 @@ class AddressInputForm extends Component {
         }
       });
       new AddressDetailsRenderer().displayAddressDetails(this.refs.addressDetailsDiv, results);
-
+      // this.loadMap(this.props.mapCenterCoordinate, this.refs.mapContainerDiv);
+      // this.refs.mapContainerDiv.innerHTML = this.renderMap();
+      // eslint-disable-next-line no-undef
+      this.props.viewportMapAction()
     }
+  }
+
+  loadMap(mapCenterCoordinate, mapDiv) {
+
+    // eslint-disable-next-line no-undef
+    var map = new google.maps.Map(mapDiv, {
+      zoom: 15,
+      center: mapCenterCoordinate,
+      mapTypeId: 'roadmap'
+    });
+
+    // eslint-disable-next-line no-undef
+    var marker = new google.maps.Marker({
+      position: mapCenterCoordinate,
+      map: map,
+    });
+    // eslint-disable-next-line no-undef
+    this.props.loadMapAction(map, google.maps);
   }
 
   validate(evt) {
@@ -146,11 +169,7 @@ class AddressInputForm extends Component {
       city: this.props.addressInput.city,
       state: this.props.addressInput.state,
       postalCode: this.props.addressInput.postalCode,
-      country: this.props.addressInput.country/*,
-       addressLine1Error: this.props.addressInput.addressLine1Error,
-       postalError: this.props.addressInput.postalError,
-       stateError: this.props.addressInput.stateError,
-       cityError: this.props.addressInput.cityError*/
+      country: this.props.addressInput.country
     });
     let address = "";
     Object.keys(this.props.addressInput).forEach((key) => {
@@ -168,11 +187,7 @@ class AddressInputForm extends Component {
       city: event.target.value,
       state: this.props.addressInput.state,
       postalCode: this.props.addressInput.postalCode,
-      country: this.props.addressInput.country/*,
-       addressLine1Error: this.props.addressInput.addressLine1Error,
-       postalError: this.props.addressInput.postalError,
-       stateError: this.props.addressInput.stateError,
-       cityError: false*/
+      country: this.props.addressInput.country
     });
 
     if (event.target.value.length >= 3) {
@@ -211,38 +226,6 @@ class AddressInputForm extends Component {
       }
     }
   }
-
-  initMap() {
-    let mapRef = this.refs.mapContainerDiv;
-    let node = ReactDOM.findDOMNode(mapRef);
-    // eslint-disable-next-line no-undef
-    var map = new google.maps.Map(node, this.props.mapOptions);
-    // eslint-disable-next-line no-undef
-    var marker = new google.maps.Marker({
-      position: this.props.mapCenterCoordinate,
-      map: map,
-    });
-    // eslint-disable-next-line no-undef
-    this.props.loadMapAction(map, google.maps);
-  }
-
-  dropMapMarker = (map) => {
-    let marker = {
-      position: {
-        lat: this.props.mapCenterCoordinate.lat,
-        lng: this.props.mapCenterCoordinate.lng
-      },
-      map: map,
-      title: "Marker",
-      icon: {
-        fillColor: "#254B6E",
-        anchor: new this.props.maps.Point(0,0),
-        strokeWeight: 0,
-        scale: .6
-      }
-    };
-    return new this.props.maps.Marker(marker);
-  };
 
   renderMap = () => {
     // alert("Render");
@@ -293,16 +276,9 @@ class AddressInputForm extends Component {
     }
   }
 
-  componentDidMount() {
-    this.initMap();
-    // eslint-disable-next-line no-undef
-    google.maps.event.addDomListener(window, 'load', this.initMap);
-  }
-
   render() {
-    // eslint-disable-next-line no-undef
-    google.maps.event.addDomListener(window, 'load', this.initMap);
-    // this.initMap();
+    // // eslint-disable-next-line no-undef
+    // google.maps.event.addDomListener(window, 'load', this.initMap);
     return (
       <div className = "container-fluid">
         <div id = "addressLine1Row" className = "row">
@@ -400,11 +376,10 @@ class AddressInputForm extends Component {
                                                                                              empty.</label>
           </div>
         </div>
-        <div id="mapContainerDiv" ref = "mapContainerDiv" style={{height: "100%",
-          width: "100%",
-          margin: "0px",
-          padding: "0px"}}>
-          {/*<CompoZedMap/>*/}
+        <div id="mapContainerDiv" ref = "mapContainerDiv" >
+          {/*{this.renderMap()}*/}
+          <CompoZedMap/>
+          {/*<MapContainer></MapContainer>*/}
         </div>
         <div id = "address-details-div" ref = "addressDetailsDiv" className = "address-details-div">
 

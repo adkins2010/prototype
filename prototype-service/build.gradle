@@ -1,8 +1,6 @@
 buildscript {
     ext {
-        springCloudServicesVersion = '1.5.0.RELEASE'
-        springCloudVersion = 'Dalston.SR2'
-        springBootVersion = '1.5.6.RELEASE'
+        springBootVersion = '1.5.2.RELEASE'
     }
     repositories {
         maven { url "https://artifactory.allstate.com/artifactory/libs-release" }
@@ -28,61 +26,29 @@ sourceCompatibility = 1.8
 
 repositories {
     maven { url "https://artifactory.allstate.com/artifactory/libs-release" }
-    mavenCentral()
 }
 
 dependencyManagement {
     imports {
         mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Dalston.M1'
-        mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:${springCloudServicesVersion}"
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
     }
 }
 
 dependencies {
-    compile(group: 'com.sun.faces', name: 'jsf-api', version: '2.1.7')
-    compile(group: 'com.sun.faces', name: 'jsf-impl', version: '2.1.7')
-    compile(group: 'APTExternalJar', name: 'jsf-impl-messages', version: '1.0')
-    compile('org.springframework.boot:spring-boot-starter-data-jpa')
-    compile('org.springframework.boot:spring-boot-starter-groovy-templates')
-    compile('io.pivotal.spring.cloud:spring-cloud-services-starter-config-client')
-    compile('org.springframework.boot:spring-boot-starter-security')
-    compile('org.springframework.boot:spring-boot-starter-actuator')
-    compile('org.springframework.boot:spring-boot-actuator-docs')
-    compile('org.springframework.cloud:spring-cloud-starter-config')
-    compile('org.springframework.cloud:spring-cloud-starter-eureka')
-    compile('org.springframework.cloud:spring-cloud-starter-eureka-server')
-    compile('org.springframework.cloud:spring-cloud-starter-feign')
-    compile('org.springframework.cloud:spring-cloud-starter-hystrix')
-    compile('org.springframework.cloud:spring-cloud-starter-hystrix-dashboard')
-    compile('org.springframework.cloud:spring-cloud-starter-ribbon')
-    compile('org.springframework.cloud:spring-cloud-sleuth-zipkin-stream')
-    compile('org.springframework.cloud:spring-cloud-starter')
-    compile('org.springframework.cloud:spring-cloud-starter-zipkin')
-    compile('org.springframework.cloud:spring-cloud-starter-stream-rabbit')
-    compile('org.springframework.cloud:spring-cloud-starter-zuul')
-    compile('org.springframework.boot:spring-boot-starter-data-jpa')
-    compile('org.springframework.boot:spring-boot-starter-jersey')
-    compile('io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker')
-    compile('io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry')
-    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
-    compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-starter-web-services')
-    runtime('io.zipkin.java:zipkin-autoconfigure-ui')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-starter-actuator')
-    compile('com.allstate.ars.compozed:roadio-common-logging:0.0.6')
-    compile(group: 'org.drools', name: 'drools-decisiontables', version: '6.3.0.Final')
-    compile(group: 'org.drools', name: 'drools-compiler', version: '6.3.0.Final')
-    compile(group: 'org.drools', name: 'drools-core', version: '6.3.0.Final')
-    compile(group: 'org.drools', name: 'drools-decisiontables', version: '6.3.0.Final')
-    compile(group: 'org.kie', name: 'kie-api', version: '6.3.0.Final')
-    compile(group: 'org.kie', name: 'kie-ci', version: '6.3.0.Final')
-    compile(group: 'org.kie', name: 'kie-spring', version: '6.3.0.Final')
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+
+    compile('com.allstate.ars.compozed:common-logging:0.0.10')
+    compile('com.allstate.ars.compozed:common-utils:0.0.13')
+    compile('com.allstate.ars.compozed:common-exception:0.0.11')
+
     compile('org.apache.velocity:velocity:1.7')
     compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.0')
+
+    compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+    compile('org.eclipse.jdt.core.compiler:ecj:4.6.1')
+    compile('org.webjars:bootstrap:3.3.7')
 
     def SPRINGFOX_VERSION = "2.6.1"
     compile("io.springfox:springfox-swagger2:" + SPRINGFOX_VERSION)
@@ -95,17 +61,17 @@ dependencies {
 
     compile("org.springframework.cloud:spring-cloud-starter-sleuth")
 
-//    compile('com.oracle:ojdbc6:11.2.0.3')
-    runtime('mysql:mysql-connector-java')
     compile('com.oracle:ojdbc6:11.2.0.3')
+//    runtime('mysql:mysql-connector-java')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile('com.allstate.compozed:NautilusStarter:1.0.2')
     compile('org.projectlombok:lombok')
-//    compile('com.allstate.compozed:NautilusStarter:1.0.2')
 }
 
 if (System.env.BUILD_NUMBER) {
     version = "0.0.${System.env.BUILD_NUMBER}"
-} else {
+}
+else {
     version = "0.0"
 }
 
@@ -113,7 +79,7 @@ def artifactName
 if (System.env.ARTIFACT_NAME) {
     artifactName = System.env.ARTIFACT_NAME
 } else {
-    artifactName = 'RoadIo-Prototype-local'
+    artifactName = 'prototype-service-local'
 }
 
 jar {
@@ -166,18 +132,18 @@ publishing {
 
 ext {
     jacocoExclusions = ['**/libs/*',
-                        '**/com/allstate/ars/compozed/roadio/constant**',
-                        '**/com/allstate/ars/compozed/roadio/exception**',
-                        '**/com/allstate/ars/compozed/roadio/domain/response/ErrorResponse.class',
+                        '**/com/allstate/ars/compozed/constant**',
+                        '**/com/allstate/ars/compozed/exception**',
+                        '**/com/allstate/ars/compozed/domain/response/ErrorResponse.class',
                         '**/com/allstate/ars/compozed/domain/response/AbstractResponse.class',
-                        '**/com/allstate/ars/compozed/roadio/domain/RoadIoRequestResponse.class',
-                        "**/com/allstate/ars/compozed/roadio/RoadIoApplication.class"]
+                        '**/com/allstate/ars/compozed/domain/ExampleRequestResponse.class',
+                        "**/com/allstate/ars/compozed/ExampleServiceApplication.class"]
     sonarExclusions = "**/libs/*," +
-            "**/com/allstate/ars/compozed/roadio/constant**," +
-            "**/com/allstate/ars/compozed/roadio/exception**," +
-            "**/com/allstate/ars/compozed/roadio/domain/response/AbstractResponse.**," +
-            "**/com/allstate/ars/compozed/roadio/domain/RoadIoRequestResponse.**," +
-            "**/com/allstate/ars/compozed/roadio/RoadIoServiceApplication.**"
+            "**/com/allstate/ars/compozed/constant**," +
+            "**/com/allstate/ars/compozed/exception**," +
+            "**/com/allstate/ars/compozed/domain/response/AbstractResponse.**," +
+            "**/com/allstate/ars/compozed/domain/ExampleRequestResponse.**," +
+            "**/com/allstate/ars/compozed/ExampleServiceApplication.**"
 
 }
 
